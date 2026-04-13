@@ -24,7 +24,7 @@
         class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-2 max-w-5xl mx-auto">
 
         <!-- Info Column -->
-        <div class="bg-brand-dark p-12 text-white flex flex-col justify-between">
+        <div class="bg-brand-navy p-12 text-white flex flex-col justify-between">
           <div>
             <h3 class="text-3xl font-bold mb-6 text-brand-light">Información</h3>
             <p class="text-gray-300 mb-10 leading-relaxed">
@@ -32,15 +32,17 @@
             </p>
             <div class="space-y-6">
               <div class="flex flex-col">
-                <span class="text-sm text-brand-gold font-bold uppercase tracking-wider mb-1">Correo Electrónico</span>
+                <span class="text-sm text-brand-accent font-bold uppercase tracking-wider mb-1">Correo
+                  Electrónico</span>
                 <span class="text-lg">contacto@liberalegal.cl</span>
               </div>
               <div class="flex flex-col">
-                <span class="text-sm text-brand-gold font-bold uppercase tracking-wider mb-1">Teléfono Principal</span>
+                <span class="text-sm text-brand-accent font-bold uppercase tracking-wider mb-1">Teléfono
+                  Principal</span>
                 <span class="text-lg">+56 9 1234 5678</span>
               </div>
               <div class="flex flex-col">
-                <span class="text-sm text-brand-gold font-bold uppercase tracking-wider mb-1">Ubicación</span>
+                <span class="text-sm text-brand-accent font-bold uppercase tracking-wider mb-1">Ubicación</span>
                 <span class="text-lg">Providencia, Región Metropolitana, Chile</span>
               </div>
             </div>
@@ -102,7 +104,7 @@
             </div>
 
             <button type="submit" :disabled="isSubmitting"
-              class="w-full mt-4 bg-brand-green hover:bg-brand-dark text-white font-bold py-4 rounded-lg transition-all shadow-md hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed">
+              class="w-full mt-4 bg-brand-navy hover:bg-brand-green text-white font-bold py-4 rounded-lg transition-all shadow-md hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed">
               {{ isSubmitting ? 'Procesando Envío...' : 'Enviar Inquietud Confidencial' }}
             </button>
           </form>

@@ -7,7 +7,7 @@
       <slot />
     </main>
 
-    <footer class="bg-brand-dark text-brand-light py-16 mt-16 border-t-[30px] border-brand-green">
+    <footer class="bg-brand-navy text-brand-light py-16 border-t-[4px] border-brand-accent">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
         <!-- Logo y Descripcion -->
         <div class="col-span-1 md:col-span-2">

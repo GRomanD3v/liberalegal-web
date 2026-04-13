@@ -5,7 +5,8 @@
     <div
       class="relative w-full border-b-8 border-b-brand-accent text-center pt-48 pb-48 px-4 sm:px-6 lg:px-8 shadow-lg mb-16 overflow-hidden">
       <div class="absolute inset-0 z-0 bg-gradient-to-r from-brand-green to-brand-dark">
-        <img src="/justicia.jpg" alt="Fondo Justicia" class="w-full h-full object-cover mix-blend-multiply opacity-60" />
+        <img src="/justicia.jpg" alt="Fondo Justicia"
+          class="w-full h-full object-cover mix-blend-multiply opacity-60" />
       </div>
       <div class="max-w-4xl mx-auto relative z-10">
         <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">

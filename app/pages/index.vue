@@ -158,6 +158,14 @@
         </div>
       </div>
     </section>
+    <div class="bg-gradient-to-r from-brand-green to-brand-navy py-16 text-center px-6">
+      <h2 class="text-3xl font-bold text-brand-light mb-6">¿Listo para resolver tu deudas?</h2>
+      <NuxtLink to="/contacto"
+        class="inline-block px-8 py-4 bg-brand-navy text-white font-bold border-2 border-brand-light rounded-full hover:bg-brand-green/80 transition shadow-lg">
+        Contactanos Ahora
+      </NuxtLink>
+    </div>
+
   </div>
 </template>
 

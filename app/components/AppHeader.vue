@@ -54,7 +54,7 @@ onUnmounted(() => {
             {{ link.name }}
           </NuxtLink>
           <button @click="navigateToContact"
-            class="bg-brand-gold hover:bg-brand-green text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+            class="bg-brand-navy hover:bg-brand-green text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
             Defiende tu CAE
           </button>
         </nav>
@@ -85,7 +85,7 @@ onUnmounted(() => {
           </NuxtLink>
           <div class="pt-4 pb-2 px-2">
             <button @click="navigateToContact"
-              class="w-full flex justify-center items-center bg-brand-gold hover:bg-brand-green text-white px-6 py-3.5 rounded-xl font-bold transition-all shadow-md">
+              class="w-full flex justify-center items-center bg-brand-navy hover:bg-brand-green text-white px-6 py-3.5 rounded-xl font-bold transition-all shadow-md">
               Defiende tu CAE
             </button>
           </div>

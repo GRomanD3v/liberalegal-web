@@ -5,7 +5,8 @@
     <div
       class="relative w-full border-b-8 border-b-brand-accent text-center pt-48 pb-48 px-4 sm:px-6 lg:px-8 shadow-lg mb-16 overflow-hidden">
       <div class="absolute inset-0 z-0 bg-gradient-to-r from-brand-green to-brand-dark">
-        <img src="/justicia.jpg" alt="Fondo Justicia" class="w-full h-full object-cover mix-blend-multiply opacity-60" />
+        <img src="/justicia.jpg" alt="Fondo Justicia"
+          class="w-full h-full object-cover mix-blend-multiply opacity-60" />
       </div>
       <div class="max-w-4xl mx-auto relative z-10">
         <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
@@ -61,6 +62,29 @@
 
     </div>
   </div>
+  <section class="relative py-32 bg-slate-900 overflow-hidden">
+
+    <div class="absolute inset-0 z-0">
+      <img src="/martillo.jpg" alt="Defensa Legal" class="w-full h-full object-cover opacity-40" />
+      <div class="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
+    </div>
+
+    <div class="relative z-10 w-full px-6 md:px-24 text-center">
+
+      <h3 class="text-brand-accent font-bold tracking-widest uppercase text-sm md:text-base mb-2">
+        Estrategias precisas para tu defensa
+      </h3>
+
+      <h2 class="text-2xl md:text-4xl font-extrabold text-brand-light mb-3 uppercase tracking-tight">
+        Te devolvemos tu tranquilidad financiera
+      </h2>
+
+      <p class="text-brand-accent font-semibold text-lg md:text-xl uppercase tracking-wide">
+        Defendemos tus derechos administrativos y financieros
+      </p>
+
+    </div>
+  </section>
 </template>
 
 <script setup>
