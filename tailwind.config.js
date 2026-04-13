@@ -1,14 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./app/**/*.{js,vue,ts}",
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./app.vue",
-    "./error.vue",
-  ],
+
   theme: {
     extend: {
       colors: {
@@ -17,6 +9,12 @@ export default {
           dark: '#343A40',
           light: '#F8F9FA',
           accent: '#A3B18A',
+          // NUEVOS PARA CONTRASTE Y JERARQUÍA
+          navy: '#1B263B',    // Un azul muy oscuro para mayor profundidad que el gris
+          gold: '#B08D57',    // Color "oro/bronce" para dar el toque de distinción legal
+          orange: '#D4A373',  // Un tono tierra/naranja para botones de alta conversión
+          slate: '#E5E7EB',   // Gris claro para bordes y separadores (esencial para el look JustoPrecio)
+          muted: '#6B7280',   // Gris medio para textos secundarios
         }
       },
       fontFamily: {

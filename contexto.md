@@ -1,45 +1,20 @@
-# Contexto del Proyecto: Liberalegal.cl
+# Contexto Actualizado: Liberalegal (Clon Estructura Justo Precio)
 
-## 1. Visión General
-Liberalegal es una plataforma de servicios jurídicos moderna y ágil. El objetivo principal de esta landing page es captar clientes con deudas de CAE (Crédito con Aval del Estado) que enfrentan acciones de la Tesorería General de la República.
+## 1. Arquitectura de Navegación
+El sitio deja de ser una landing única. Se requiere una estructura de páginas en Nuxt 3:
+- `/` (Inicio): Hero con imagen de edificio, formulario y línea de tiempo.
+- `/nosotros`: Reseña corporativa y visión.
+- `/servicios`: Grid de servicios legales (énfasis en CAE).
+- `/contacto`: Formulario detallado, datos de contacto y mapa.
 
-**Tono de marca:** Profesional, protector, transparente y directo. No usamos chatbots; priorizamos el contacto humano directo.
+## 2. Identidad Visual Confirmada
+- **Logo:** Monograma doble "L" (Verde Bosque y Gris).
+- **Paleta:** - Primario: #3A5A40 (Verde)
+  - Secundario: #343A40 (Gris oscuro)
+  - Fondo: #F8F9FA (Blanco humo)
+- **UI Style:** Estilo "Justo Precio" (Más sombras, contenedores definidos, tarjetas blancas sobre fondos grises).
 
-## 2. Stack Tecnológico
-- **Framework:** Nuxt 3 (Vue 3)
-- **Estilos:** Tailwind CSS
-- **Iconografía:** Lucide-vue-next o Iconify
-- **Formularios:** Validación simple (RUT chileno, email, teléfono)
-
-## 3. Identidad Visual (Paleta de Colores)
-Basado en el logotipo de dos "L" entrelazadas:
-- **Verde Corporativo (Principal):** #3A5A40 (Basado en el logo - Verde Bosque)
-- **Gris Oscuro / Grafito:** #343A40 (Para textos y contrastes)
-- **Blanco / Off-white:** #F8F9FA (Para fondos limpios)
-- **Acento (Opcional):** #A3B18A (Verde claro para hovers o detalles)
-
-## 4. Estructura de la Landing Page
-### A. Header
-- Logo a la izquierda (Liberalegal).
-- Navegación simple: Inicio, Sobre Nosotros, Contacto.
-- Botón CTA: "Defiende tu CAE".
-
-### B. Hero Section (Foco Principal)
-- **Título:** "Defendemos a los deudores del CAE ante la Tesorería General de la República."
-- **Subtítulo:** "Recupera tu tranquilidad y tu devolución de impuestos. Defensa legal especializada en retenciones y cobranzas estatales."
-- **Visual:** Imagen o banner informativo que transmita seguridad legal.
-- **CTA:** Botón que desplace al formulario de contacto.
-
-### C. Sección "Sobre Nosotros" (Genérica)
-- Enfoque en un equipo de abogados expertos en derecho administrativo y financiero.
-- Misión: Democratizar el acceso a la defensa legal de calidad.
-
-### D. Formulario de Contacto (Conversión)
-- Campos: Nombre completo, RUT (para análisis previo), Teléfono, Email, Mensaje.
-- Acción: Envío directo a correo electrónico o WhatsApp.
-
-## 5. Reglas de Desarrollo
-- Mantener el código limpio y modularizado en componentes de Vue 3.
-- Utilizar `script setup` con Composition API.
-- Responsividad total (Mobile First).
-- No reutilizar código de otros proyectos (Justo Precio) para evitar deuda técnica; construir lógica nueva basada en este contexto.
+## 3. Componentes Clave
+- **Layout General:** Navbar corporativo y Footer con datos legales.
+- **Hero Home:** Columna izquierda con propuesta de valor, columna derecha con formulario inicial. Fondo: Imagen de edificio con overlay oscuro para legibilidad.
+- **Línea de Tiempo (Home):** Stepper vertical/horizontal que explique el proceso legal.
