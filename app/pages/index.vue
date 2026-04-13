@@ -12,7 +12,7 @@
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         <!-- Text Column -->
         <div class="flex-1 text-white">
-          <div class="inline-block px-4 py-1.5 rounded-full bg-brand-gold backdrop-blur-sm text-sm font-semibold mb-6">
+          <div class="inline-block px-4 py-1.5 rounded-full bg-brand-navy backdrop-blur-sm text-sm font-semibold mb-6">
             Estudio Jurídico Especializado
           </div>
           <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold leading-[1.15] mb-6 tracking-tight">
@@ -24,11 +24,11 @@
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <NuxtLink to="/servicios"
-              class="inline-flex justify-center items-center px-8 py-4 bg-brand-gold hover:bg-brand-green text-white font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-lg">
+              class="inline-flex justify-center items-center px-8 py-4 bg-brand-navy hover:bg-brand-green text-white font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-lg">
               Conoce Nuestros Servicios
             </NuxtLink>
             <NuxtLink to="/nosotros"
-              class="inline-flex justify-center items-center px-8 py-4 bg-brand-gold hover:bg-brand-green backdrop-blur-sm border border-white/20 text-white font-bold rounded-xl transition-all text-lg">
+              class="inline-flex justify-center items-center px-8 py-4 bg-brand-navy hover:bg-brand-green backdrop-blur-sm border border-white/20 text-white font-bold rounded-xl transition-all text-lg">
               Sobre Nosotros
             </NuxtLink>
           </div>
