@@ -63,6 +63,49 @@
       </div>
     </section>
 
+    <!-- Trust Bar -->
+    <div class="w-full bg-gradient-to-r from-brand-green to-brand-navy py-16">
+      <div class="max-w-7xl mx-auto px-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform transition-transform duration-300 hover:-translate-y-2">
+            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50">
+              <BadgeCheck class="w-10 h-10" />
+            </div>
+            <h3 class="font-bold text-xl text-brand-dark mb-3">Evaluación 100% Gratuita</h3>
+            <p class="text-brand-muted leading-relaxed">
+              Analizamos tu deuda y situación patrimonial sin costo inicial para diseñar la mejor estrategia legal.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform transition-transform duration-300 hover:-translate-y-2">
+            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50">
+              <Landmark class="w-10 h-10" />
+            </div>
+            <h3 class="font-bold text-xl text-brand-dark mb-3">Especialistas en TGR</h3>
+            <p class="text-brand-muted leading-relaxed">
+              Expertos en detener retenciones de impuestos y frenar embargos de la Tesorería General de la República.
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform transition-transform duration-300 hover:-translate-y-2">
+            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50">
+              <ShieldCheck class="w-10 h-10" />
+            </div>
+            <h3 class="font-bold text-xl text-brand-dark mb-3">Confidencialidad Absoluta</h3>
+            <p class="text-brand-muted leading-relaxed">
+              Tu información financiera está estrictamente protegida bajo nuestro secreto profesional en todo momento.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- Timeline Section -->
     <section class="py-24 relative overflow-hidden">
       <!-- Background element -->
@@ -160,7 +203,7 @@
       </div>
     </section>
     <div class="bg-gradient-to-r from-brand-green to-brand-navy py-16 text-center px-6">
-      <h2 class="text-3xl font-bold text-brand-light mb-6">¿Listo para resolver tu deudas?</h2>
+      <h2 class="text-3xl font-bold text-brand-light mb-6">¿Listo para resolver tus deudas?</h2>
       <NuxtLink to="/contacto"
         class="inline-block px-8 py-4 bg-brand-navy text-white font-bold border-2 border-brand-light rounded-full hover:bg-brand-green/80 transition shadow-lg">
         Contactanos Ahora
@@ -171,6 +214,7 @@
 </template>
 
 <script setup>
+import { BadgeCheck, Landmark, ShieldCheck } from 'lucide-vue-next'
 useHead({
   title: 'Inicio | Liberalegal',
   meta: [

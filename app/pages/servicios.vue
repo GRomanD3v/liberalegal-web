@@ -21,97 +21,56 @@
 
     <!-- Contenido -->
     <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <!-- Servicio 1 -->
-        <div
-          class="bg-white p-10 rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 flex flex-col group">
-          <div
-            class="w-16 h-16 bg-brand-green text-white shadow-md rounded-xl flex items-center justify-center mb-6 transition-transform group-hover:scale-105">
-            <Landmark class="w-8 h-8" />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Servicio 1: Defensa Integral CAE -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col">
+          <div class="flex items-center mb-4 text-brand-green">
+            <Landmark class="w-8 h-8 mr-3 shrink-0" />
+            <h3 class="text-xl font-bold text-brand-dark">Defensa Integral CAE</h3>
           </div>
-          <h3 class="text-2xl font-bold text-brand-dark mb-4">1. Defensa Integral de Deudores CAE</h3>
-          <p class="text-gray-600 mb-6 flex-grow leading-relaxed">
-            Protegemos tu patrimonio frente a las acciones de cobro de la Tesorería General de la República. Si tu
-            devolución de impuestos ha sido retenida o enfrentas amenazas de embargo, nuestro equipo legal interviene
-            para resguardar tus derechos y buscar la prescripción de la deuda cuando corresponda.
+          <p class="text-gray-600 mb-6 flex-grow">
+            Protegemos tu patrimonio frente a las acciones de cobro de la Tesorería General de la República. Detenemos retenciones de impuestos y amenazas de embargo.
           </p>
-          <div class="bg-gray-50 border border-gray-100 p-4 rounded-lg mb-8">
-            <span class="font-bold text-brand-dark text-sm">Foco Principal:</span> <span
-              class="text-gray-600 text-sm">Retenciones de impuestos, embargos y cobranza administrativa.</span>
-          </div>
-          <NuxtLink to="/contacto?servicio=cae"
-            class="mt-auto self-start inline-flex items-center text-sm font-bold text-brand-dark border-2 border-brand-dark hover:border-brand-green hover:bg-brand-green hover:text-white px-6 py-2.5 rounded-lg transition-colors text-center shadow-sm">
-            Consultar por este servicio
-          </NuxtLink>
+          <NuxtLink to="/contacto?servicio=cae" class="text-brand-green font-bold hover:underline self-start">Consultar por este servicio</NuxtLink>
         </div>
 
-        <!-- Servicio 2 -->
-        <div
-          class="bg-white p-10 rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 flex flex-col group">
-          <div
-            class="w-16 h-16 bg-brand-green text-white shadow-md rounded-xl flex items-center justify-center mb-6 transition-transform group-hover:scale-105">
-            <Clock class="w-8 h-8" />
+        <!-- Servicio 2: Prescripción de Deudas -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col">
+          <div class="flex items-center mb-4 text-brand-green">
+            <Clock class="w-8 h-8 mr-3 shrink-0" />
+            <h3 class="text-xl font-bold text-brand-dark">Prescripción de Deudas</h3>
           </div>
-          <h3 class="text-2xl font-bold text-brand-dark mb-4">2. Prescripción de Deudas Comerciales</h3>
-          <p class="text-gray-600 mb-6 flex-grow leading-relaxed">
-            Muchas deudas siguen vigentes en los registros comerciales a pesar de que el plazo legal para su cobro ha
-            expirado. Gestionamos la declaración judicial de prescripción para que puedas limpiar tu historial y salir
-            de Dicom de manera definitiva.
+          <p class="text-gray-600 mb-6 flex-grow">
+            Gestionamos la declaración judicial de prescripción para deudas bancarias y comerciales (retail) para limpiar tu historial financiero de forma definitiva.
           </p>
-          <div class="bg-gray-50 border border-gray-100 p-4 rounded-lg mb-8">
-            <span class="font-bold text-brand-dark text-sm">Foco Principal:</span> <span
-              class="text-gray-600 text-sm">Deudas de consumo, tarjetas de crédito y retail.</span>
-          </div>
-          <NuxtLink to="/contacto?servicio=prescripcion"
-            class="mt-auto self-start inline-flex items-center text-sm font-bold text-brand-dark border-2 border-brand-dark hover:border-brand-green hover:bg-brand-green hover:text-white px-6 py-2.5 rounded-lg transition-colors text-center shadow-sm">
-            Consultar por este servicio
-          </NuxtLink>
+          <NuxtLink to="/contacto?servicio=prescripcion" class="text-brand-green font-bold hover:underline self-start">Consultar por este servicio</NuxtLink>
         </div>
 
-        <!-- Servicio 3 -->
-        <div
-          class="bg-white p-10 rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 flex flex-col group">
-          <div
-            class="w-16 h-16 bg-brand-green text-white shadow-md rounded-xl flex items-center justify-center mb-6 transition-transform group-hover:scale-105">
-            <ShieldCheck class="w-8 h-8" />
+        <!-- Servicio 3: Defensa ante Embargos -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col">
+          <div class="flex items-center mb-4 text-brand-green">
+            <ShieldCheck class="w-8 h-8 mr-3 shrink-0" />
+            <h3 class="text-xl font-bold text-brand-dark">Defensa ante Embargos</h3>
           </div>
-          <h3 class="text-2xl font-bold text-brand-dark mb-4">3. Defensa ante Embargos y Demandas</h3>
-          <p class="text-gray-600 mb-6 flex-grow leading-relaxed">
-            Si recibiste una notificación judicial, el tiempo es el factor más crítico. Representamos a personas frente
-            a bancos y financieras, utilizando todas las herramientas procesales para detener el embargo y proteger tus
-            bienes.
+          <p class="text-gray-600 mb-6 flex-grow">
+            Representación urgente frente a demandas ejecutivas. Utilizamos todas las herramientas procesales para detener el embargo y proteger tus bienes.
           </p>
-          <div class="bg-gray-50 border border-gray-100 p-4 rounded-lg mb-8">
-            <span class="font-bold text-brand-dark text-sm">Foco Principal:</span> <span
-              class="text-gray-600 text-sm">Oposición a la ejecución, tercerías y nulidad procesal.</span>
-          </div>
-          <NuxtLink to="/contacto?servicio=embargos"
-            class="mt-auto self-start inline-flex items-center text-sm font-bold text-brand-dark border-2 border-brand-dark hover:border-brand-green hover:bg-brand-green hover:text-white px-6 py-2.5 rounded-lg transition-colors text-center shadow-sm">
-            Consultar por este servicio
-          </NuxtLink>
+          <NuxtLink to="/contacto?servicio=embargos" class="text-brand-green font-bold hover:underline self-start">Consultar por este servicio</NuxtLink>
         </div>
 
-        <!-- Servicio 4 -->
-        <div
-          class="bg-white p-10 rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-100 flex flex-col group">
-          <div
-            class="w-16 h-16 bg-brand-green text-white shadow-md rounded-xl flex items-center justify-center mb-6 transition-transform group-hover:scale-105">
-            <Trash2 class="w-8 h-8" />
+        <!-- Servicio 4: Eliminación de Antecedentes -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col">
+          <div class="flex items-center mb-4 text-brand-green">
+            <Trash2 class="w-8 h-8 mr-3 shrink-0" />
+            <h3 class="text-xl font-bold text-brand-dark">Eliminación de Antecedentes</h3>
           </div>
-          <h3 class="text-2xl font-bold text-brand-dark mb-4">4. Eliminación de Antecedentes</h3>
-          <p class="text-gray-600 mb-6 flex-grow leading-relaxed">
-            Te ayudamos a ejercer tu derecho de eliminación de datos (Ley de Olvido) en boletines comerciales y bases de
-            riesgo. Nos aseguramos de que tu información financiera refleje tu realidad actual.
+          <p class="text-gray-600 mb-6 flex-grow">
+            Te ayudamos a ejercer tu derecho de eliminación de datos en el Boletín Comercial y otras bases de datos de riesgo para que vuelvas a ser sujeto de crédito.
           </p>
-          <div class="bg-gray-50 border border-gray-100 p-4 rounded-lg mb-8">
-            <span class="font-bold text-brand-dark text-sm">Foco Principal:</span> <span
-              class="text-gray-600 text-sm">Dicom, Boletín Comercial y registros internos bancarios.</span>
-          </div>
-          <NuxtLink to="/contacto?servicio=eliminacion"
-            class="mt-auto self-start inline-flex items-center text-sm font-bold text-brand-dark border-2 border-brand-dark hover:border-brand-green hover:bg-brand-green hover:text-white px-6 py-2.5 rounded-lg transition-colors text-center shadow-sm">
-            Consultar por este servicio
-          </NuxtLink>
+          <NuxtLink to="/contacto?servicio=eliminacion" class="text-brand-green font-bold hover:underline self-start">Consultar por este servicio</NuxtLink>
         </div>
+
       </div>
     </div>
   </div>

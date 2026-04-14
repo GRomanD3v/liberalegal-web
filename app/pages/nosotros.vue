@@ -21,45 +21,36 @@
 
     <!-- Contenido -->
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Pilares -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-10 rounded-xl shadow-md border border-gray-100 text-center">
-          <div
-            class="w-16 h-16 mx-auto bg-brand-green/10 text-brand-green rounded-xl flex items-center justify-center mb-6">
-            <Gavel class="w-8 h-8" />
-          </div>
-          <h3 class="text-xl font-bold text-brand-dark mb-4">Excelencia Técnica</h3>
-          <p class="text-gray-600 leading-relaxed">
-            Estudiamos las debilidades del sistema para usar la ley a tu favor. Presentamos acciones estratégicas con la
-            máxima precisión jurídica.
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
+        <!-- Columna Izquierda (Texto) -->
+        <div>
+          <h1 class="text-brand-dark font-bold text-3xl mb-4">Nuestro Compromiso con tu Tranquilidad</h1>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Libera Legal nace con un propósito claro: democratizar el acceso a una defensa técnica y especializada
+            frente a las acciones de cobranza del Estado y grandes corporaciones. Sabemos que enfrentar retenciones de
+            impuestos o amenazas de embargo por deudas como el CAE genera una profunda angustia.
           </p>
+          <p class="text-gray-600 mb-8 leading-relaxed">
+            Nuestro equipo está compuesto por abogados especialistas en derecho administrativo y civil, enfocados en
+            proteger tu patrimonio con estrategias probadas. No somos un estudio jurídico tradicional; somos tu escudo
+            financiero. Actuamos con rapidez, total transparencia en nuestros honorarios y un trato humano que entiende
+            la situación por la que estás pasando.
+          </p>
+          <div class="bg-white border-l-4 border-brand-green p-6 shadow-sm">
+            <h3 class="font-bold text-brand-dark mb-2">Misión:</h3>
+            <p class="text-gray-700 italic">
+              Restituir la libertad financiera de nuestros clientes, garantizando que todo proceso de cobro se ajuste
+              estrictamente a la ley, exigiendo la prescripción y el fin de los abusos.
+            </p>
+          </div>
         </div>
 
-        <div class="bg-white p-10 rounded-xl shadow-md border border-gray-100 text-center">
-          <div
-            class="w-16 h-16 mx-auto bg-brand-green/10 text-brand-green rounded-xl flex items-center justify-center mb-6">
-            <Users class="w-8 h-8" />
-          </div>
-          <h3 class="text-xl font-bold text-brand-dark mb-4">Cercanía y Transparencia</h3>
-          <p class="text-gray-600 leading-relaxed">
-            Creemos que la comunicación debe ser humana. Un abogado experto de nuestro equipo se hará cargo
-            personalmente de tu expediente.
-          </p>
-        </div>
-
-        <div class="bg-white p-10 rounded-xl shadow-md border border-gray-100 text-center">
-          <div
-            class="w-16 h-16 mx-auto bg-brand-green/10 text-brand-green rounded-xl flex items-center justify-center mb-6">
-            <Scale class="w-8 h-8" />
-          </div>
-          <h3 class="text-xl font-bold text-brand-dark mb-4">Justicia Económica</h3>
-          <p class="text-gray-600 leading-relaxed">
-            Nuestro mayor caso de éxito es devolverte la paz financiera y cuidar los bienes que tanto te costó
-            construir.
-          </p>
+        <!-- Columna Derecha (Imagen) -->
+        <div class="flex items-center justify-center">
+          <img src="/abogado.jpg" alt="Nuestro Equipo Legal"
+            class="w-full h-auto min-h-[300px] rounded-lg shadow-md object-cover" />
         </div>
       </div>
-
     </div>
   </div>
   <section class="relative py-32 bg-slate-900 overflow-hidden">

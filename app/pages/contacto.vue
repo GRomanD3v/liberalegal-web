@@ -20,40 +20,49 @@
 
     <!-- Contenido -->
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div
-        class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 grid grid-cols-1 lg:grid-cols-2 max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
         <!-- Info Column -->
-        <div class="bg-brand-navy p-12 text-white flex flex-col justify-between">
-          <div>
-            <h3 class="text-3xl font-bold mb-6 text-brand-light">Información</h3>
-            <p class="text-gray-300 mb-10 leading-relaxed">
-              La atención rápida es clave para detener embargos y retenciones fiscales. No dejes pasar más tiempo.
-            </p>
-            <div class="space-y-6">
-              <div class="flex flex-col">
-                <span class="text-sm text-brand-accent font-bold uppercase tracking-wider mb-1">Correo
-                  Electrónico</span>
-                <span class="text-lg">contacto@liberalegal.cl</span>
-              </div>
-              <div class="flex flex-col">
-                <span class="text-sm text-brand-accent font-bold uppercase tracking-wider mb-1">Teléfono
-                  Principal</span>
-                <span class="text-lg">+56 9 1234 5678</span>
-              </div>
-              <div class="flex flex-col">
-                <span class="text-sm text-brand-accent font-bold uppercase tracking-wider mb-1">Ubicación</span>
-                <span class="text-lg">Providencia, Región Metropolitana, Chile</span>
+        <div class="flex flex-col">
+          <h1 class="text-3xl font-extrabold text-brand-dark mb-8">Hablemos de tu caso</h1>
+          
+          <div class="space-y-8 text-gray-700">
+            <div class="flex items-start">
+              <MapPin class="w-6 h-6 text-brand-green mt-1 mr-4 shrink-0" />
+              <div>
+                <strong class="block text-brand-dark mb-1">Dirección:</strong>
+                <span>Santiago, Región Metropolitana (Atención presencial previa cita).</span>
               </div>
             </div>
-          </div>
-          <div class="mt-12 opacity-50 flex items-center gap-4">
-            <img src="/logo-white.png" alt="Logo" class="h-8" />
+            
+            <div class="flex items-start">
+              <Clock class="w-6 h-6 text-brand-green mt-1 mr-4 shrink-0" />
+              <div>
+                <strong class="block text-brand-dark mb-1">Horario:</strong>
+                <span>Lunes a Viernes de 09:00 a 18:00 hrs.</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <Phone class="w-6 h-6 text-brand-green mt-1 mr-4 shrink-0" />
+              <div>
+                <strong class="block text-brand-dark mb-1">Teléfono:</strong>
+                <span>+56 9 0000 0000</span>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <Mail class="w-6 h-6 text-brand-green mt-1 mr-4 shrink-0" />
+              <div>
+                <strong class="block text-brand-dark mb-1">Correo:</strong>
+                <span>contacto@liberalegal.cl</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Form Column -->
-        <div class="p-10 lg:p-12">
+        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
 
           <div v-if="errorMsg"
             class="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl text-red-700 font-medium text-sm">
@@ -63,49 +72,60 @@
           <div v-if="showSuccess" class="h-full flex flex-col items-center justify-center text-center py-12">
             <h3 class="text-3xl font-extrabold text-brand-dark mb-4">¡Recibido exitosamente!</h3>
             <p class="text-gray-600 mb-8 px-4">
-              La información sobre tu solicitud ha ingresado a nuestra base de datos. Nos pondremos en contacto
-              prontamente.
+              La información sobre tu solicitud ha ingresado a nuestra base de datos. Nos pondremos en contacto prontamente.
             </p>
             <button @click="showSuccess = false" class="text-brand-green font-bold hover:underline">
               Enviar nueva consulta
             </button>
           </div>
 
-          <form v-else @submit.prevent="submitForm" class="space-y-5">
+          <form v-else @submit.prevent="submitForm" class="space-y-4">
             <div>
-              <label class="block text-sm font-semibold text-gray-700 mb-2">Nombre Completo</label>
+              <label class="block text-sm mb-1 text-gray-700">Nombre Completo</label>
               <input v-model="form.fullName" type="text" required
-                class="w-full px-5 py-3 rounded-lg border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all bg-gray-50 focus:bg-white text-gray-800">
+                class="w-full px-4 py-3 rounded border border-gray-200 focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none transition-all">
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-sm font-semibold text-gray-700 mb-2">RUT</label>
+                <label class="block text-sm mb-1 text-gray-700">RUT</label>
                 <input v-model="form.rut" type="text" required
-                  class="w-full px-5 py-3 rounded-lg border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all bg-gray-50 focus:bg-white text-gray-800">
+                  class="w-full px-4 py-3 rounded border border-gray-200 focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none transition-all">
               </div>
               <div>
-                <label class="block text-sm font-semibold text-gray-700 mb-2">Teléfono Celular</label>
+                <label class="block text-sm mb-1 text-gray-700">Teléfono</label>
                 <input v-model="form.phone" type="tel" required
-                  class="w-full px-5 py-3 rounded-lg border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all bg-gray-50 focus:bg-white text-gray-800">
+                  class="w-full px-4 py-3 rounded border border-gray-200 focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none transition-all">
               </div>
             </div>
 
             <div>
-              <label class="block text-sm font-semibold text-gray-700 mb-2">Correo Electrónico</label>
+              <label class="block text-sm mb-1 text-gray-700">Email</label>
               <input v-model="form.email" type="email" required
-                class="w-full px-5 py-3 rounded-lg border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all bg-gray-50 focus:bg-white text-gray-800">
+                class="w-full px-4 py-3 rounded border border-gray-200 focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none transition-all">
             </div>
 
             <div>
-              <label class="block text-sm font-semibold text-gray-700 mb-2">Asunto / Situación Actual</label>
-              <textarea v-model="form.message" rows="4"
-                class="w-full px-5 py-3 rounded-lg border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all resize-none bg-gray-50 focus:bg-white text-gray-800"></textarea>
+              <label class="block text-sm mb-1 text-gray-700">Tipo de Deuda</label>
+              <select v-model="form.deuda" required 
+                class="w-full px-4 py-3 rounded border border-gray-200 focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none transition-all text-gray-700 bg-white">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="CAE">CAE</option>
+                <option value="Bancaria">Bancaria</option>
+                <option value="Retail">Retail</option>
+                <option value="Otra">Otra</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm mb-1 text-gray-700">Mensaje o detalles de tu caso</label>
+              <textarea v-model="form.message" rows="4" required
+                class="w-full px-4 py-3 rounded border border-gray-200 focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none transition-all resize-none"></textarea>
             </div>
 
             <button type="submit" :disabled="isSubmitting"
-              class="w-full mt-4 bg-brand-navy hover:bg-brand-green text-white font-bold py-4 rounded-lg transition-all shadow-md hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed">
-              {{ isSubmitting ? 'Procesando Envío...' : 'Enviar Inquietud Confidencial' }}
+              class="w-full mt-2 bg-brand-green text-white py-3 rounded hover:bg-brand-dark transition-colors disabled:opacity-70 disabled:cursor-not-allowed font-semibold">
+              {{ isSubmitting ? 'Enviando...' : 'Enviar Consulta Confidencial' }}
             </button>
           </form>
         </div>
@@ -118,6 +138,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
+import { MapPin, Clock, Phone, Mail } from 'lucide-vue-next'
 
 const route = useRoute()
 
@@ -126,6 +147,7 @@ const form = ref({
   rut: '',
   phone: '',
   email: '',
+  deuda: '',
   message: ''
 })
 
@@ -163,7 +185,7 @@ const submitForm = async () => {
 
   isSubmitting.value = false
   showSuccess.value = true
-  form.value = { fullName: '', rut: '', phone: '', email: '', message: '' }
+  form.value = { fullName: '', rut: '', phone: '', email: '', deuda: '', message: '' }
 }
 
 useHead({
