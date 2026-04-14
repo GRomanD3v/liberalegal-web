@@ -62,7 +62,7 @@ onUnmounted(() => {
         <!-- Mobile Menu Toggle -->
         <div class="md:hidden flex items-center">
           <button @click="toggleMenu"
-            class="text-brand-dark hover:text-brand-gold focus:outline-none p-2 rounded-lg hover:bg-gray-100 transition-colors">
+            class="text-brand-dark hover:text-brand-accent focus:outline-none p-2 rounded-lg hover:bg-gray-100 transition-colors">
             <Menu v-if="!isMenuOpen" class="w-6 h-6" />
             <X v-else class="w-6 h-6" />
           </button>
@@ -80,7 +80,7 @@ onUnmounted(() => {
         <div class="pt-2 pb-6 px-4 space-y-1">
           <NuxtLink v-for="link in navLinks" :key="link.name" :to="link.href" @click="isMenuOpen = false"
             class="block px-4 py-3 text-base font-semibold text-gray-800 hover:text-brand-green hover:bg-brand-green/10 rounded-xl transition-colors"
-            active-class="text-brand-green bg-brand-gold/10 font-extrabold border-l-4 border-brand-green">
+            active-class="text-brand-green bg-brand-navy/10 font-extrabold border-l-[20px] border-brand-green">
             {{ link.name }}
           </NuxtLink>
           <div class="pt-4 pb-2 px-2">

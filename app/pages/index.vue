@@ -1,7 +1,8 @@
 <template>
   <div class="bg-brand-light">
     <!-- Hero Section -->
-    <section class="relative w-full h-[1100px] flex items-center">
+    <section
+      class="relative w-full min-h-[600px] md:min-h-[1000px] pt-40 pb-20 md:pt-20 flex items-center bg-cover bg-center">
       <!-- Background Image with Dark Overlay -->
       <div class="absolute inset-0 z-0 bg-brand-dark">
         <img src="/hero-img.jpg" alt="Defensa Legal Institucional"
