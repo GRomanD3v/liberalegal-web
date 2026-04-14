@@ -53,6 +53,7 @@
       </div>
     </div>
   </div>
+  <!--Seccion de imagen con texto-->
   <section class="relative py-32 bg-slate-900 overflow-hidden">
 
     <div class="absolute inset-0 z-0">
@@ -62,15 +63,15 @@
 
     <div class="relative z-10 w-full px-6 md:px-24 text-center">
 
-      <h3 class="text-brand-accent font-bold tracking-widest uppercase text-sm md:text-base mb-2">
+      <h3 class="text-brand-accent font-bold tracking-widest uppercase text-sm md:text-sm mb-2">
         Estrategias precisas para tu defensa
       </h3>
 
-      <h2 class="text-2xl md:text-4xl font-extrabold text-brand-light mb-3 uppercase tracking-tight">
+      <h2 class="text-2xl md:text-4xl font-extrabold text-brand-light mb-3 uppercase tracking-wide">
         Te devolvemos tu tranquilidad financiera
       </h2>
 
-      <p class="text-brand-accent font-semibold text-lg md:text-xl uppercase tracking-wide">
+      <p class="text-brand-accent font-semibold text-sm md:text-lg uppercase tracking-wide">
         Defendemos tus derechos administrativos y financieros
       </p>
 
