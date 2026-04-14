@@ -55,7 +55,10 @@
 
       <div
         class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-        <p>&copy; {{ new Date().getFullYear() }} Liberalegal. Todos los derechos reservados.</p>
+        <p>&copy; {{ new Date().getFullYear() }} Liberalegal. Todos los derechos reservados. Desarrollado por
+          <a href="https://groman.cl" target="_blank"
+            class="text-brand-accent hover:text-brand-light transition-colors">groman.cl</a>
+        </p>
       </div>
     </footer>
   </div>

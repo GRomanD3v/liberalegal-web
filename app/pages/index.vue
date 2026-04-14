@@ -1,7 +1,7 @@
 <template>
   <div class="bg-brand-light">
     <!-- Hero Section -->
-    <section class="relative w-full h-[1000px] flex items-center pt-20">
+    <section class="relative w-full h-[1100px] flex items-center">
       <!-- Background Image with Dark Overlay -->
       <div class="absolute inset-0 z-0 bg-brand-dark">
         <img src="/hero-img.jpg" alt="Defensa Legal Institucional"
@@ -19,7 +19,7 @@
           <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold leading-[1.15] mb-6 tracking-tight">
             Defensa legal frente al CAE y embargos estatales
           </h1>
-          <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-xl font-light leading-relaxed">
+          <p class="text-lg md:text-xl text-white mb-8 max-w-xl font-light leading-relaxed">
             Recupera tu tranquilidad financiera y asegura tu devolución de impuestos. Detenemos las acciones abusivas de
             cobranza con respaldo profesional y trato humano.
           </p>
@@ -111,7 +111,7 @@
       <!-- Background element -->
       <div class="absolute right-0 top-1/4 w-1/3 h-1/2 bg-brand-green/5 rounded-l-full blur-3xl -z-10"></div>
 
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20">
           <h2 class="text-3xl lg:text-4xl font-extrabold text-brand-dark mb-6 tracking-tight">Nuestro Proceso de Defensa
           </h2>

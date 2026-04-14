@@ -36,7 +36,7 @@ onUnmounted(() => {
 
 <template>
   <header :class="[
-    'fixed top-0 w-full z-50 transition-all duration-300 bg-white',
+    'fixed top-0 w-full z-50 transition-all duration-300 border-b border-gray-100 bg-white',
     isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
   ]">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,7 +50,7 @@ onUnmounted(() => {
         <nav class="hidden md:flex space-x-8 items-center">
           <NuxtLink v-for="link in navLinks" :key="link.name" :to="link.href"
             class="text-gray-600 hover:text-brand-green transition-all font-semibold px-4 py-2 rounded-lg"
-            active-class="text-brand-green bg-brand-accent/30 font-extrabold shadow-sm">
+            active-class="text-brand-green bg-brand-green/20 font-extrabold shadow-sm">
             {{ link.name }}
           </NuxtLink>
           <button @click="navigateToContact"
