@@ -18,11 +18,10 @@
             Estudio Jurídico Especializado
           </div>
           <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold leading-[1.15] mb-6 tracking-tight">
-            Defensa legal frente al CAE y embargos estatales
+            Defensa legal técnica, clara y confiable.
           </h1>
           <p class="text-lg md:text-xl text-white mb-8 max-w-xl font-light leading-relaxed">
-            Recupera tu tranquilidad financiera y asegura tu devolución de impuestos. Detenemos las acciones abusivas de
-            cobranza con respaldo profesional y trato humano.
+            Recupera la tranquilidad frente a la incertidumbre legal. Entregamos informes prácticos, claros y fundamentados. Transformamos tu preocupación en soluciones estratégicas que te permitirán avanzar con certeza.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <NuxtLink to="/servicios"
@@ -77,7 +76,7 @@
             </div>
             <h3 class="font-bold text-xl text-brand-dark mb-3">Evaluación 100% Gratuita</h3>
             <p class="text-brand-muted leading-relaxed">
-              Analizamos tu deuda y situación patrimonial sin costo inicial para diseñar la mejor estrategia legal.
+              Analizamos tu conflicto de relevancia jurídica sin costo inicial para diseñar la mejor estrategia legal.
             </p>
           </div>
 
@@ -86,9 +85,9 @@
             <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50">
               <Landmark class="w-10 h-10" />
             </div>
-            <h3 class="font-bold text-xl text-brand-dark mb-3">Especialistas en TGR</h3>
+            <h3 class="font-bold text-xl text-brand-dark mb-3">Informe de factibilidad sin costo</h3>
             <p class="text-brand-muted leading-relaxed">
-              Expertos en detener retenciones de impuestos y frenar embargos de la Tesorería General de la República.
+              Remisión de informe de factibilidad jurídica, conforme a los antecedentes analizados, en el plazo de 24 horas.
             </p>
           </div>
 
@@ -99,7 +98,7 @@
             </div>
             <h3 class="font-bold text-xl text-brand-dark mb-3">Confidencialidad Absoluta</h3>
             <p class="text-brand-muted leading-relaxed">
-              Tu información financiera está estrictamente protegida bajo nuestro secreto profesional en todo momento.
+              Tu información está estrictamente protegida bajo nuestro secreto profesional en todo momento.
             </p>
           </div>
 

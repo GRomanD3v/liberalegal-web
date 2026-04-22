@@ -13,8 +13,7 @@
           Soluciones Legales <span class="text-brand-accent">Especializadas</span>
         </h1>
         <p class="text-lg md:text-xl text-gray-200 mx-auto leading-relaxed">
-          Brindamos representación legal de alto nivel para proteger tus activos y asegurar tu tranquilidad financiera
-          mediante estrategias precisas.
+          Brindamos representación legal de alto nivel para proteger tus derechos y asegurar tu tranquilidad mediante estrategias jurídicas sólidas y precisas.
         </p>
       </div>
     </div>
@@ -23,51 +22,51 @@
     <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         
-        <!-- Servicio 1: Defensa Integral CAE -->
+        <!-- Servicio 1: Defensa Integral de deudores -->
         <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col">
           <div class="flex items-center mb-4 text-brand-green">
             <Landmark class="w-8 h-8 mr-3 shrink-0" />
-            <h3 class="text-xl font-bold text-brand-dark">Defensa Integral CAE</h3>
+            <h3 class="text-xl font-bold text-brand-dark">Defensa integral de deudores</h3>
           </div>
           <p class="text-gray-600 mb-6 flex-grow">
-            Protegemos tu patrimonio frente a las acciones de cobro de la Tesorería General de la República. Detenemos retenciones de impuestos y amenazas de embargo.
-          </p>
+          Nuestra defensa legal especializada protege tu patrimonio frente a las acciones de cobro de tus acreedores. Frenamos ejecuciones, negociamos de manera inteligente y blindamos tus bienes con estrategias jurídicas precisas y confiables. Porque tener deudas no significa perderlo todo.
+        </p>
           <NuxtLink to="/contacto?servicio=cae" class="text-brand-green font-bold hover:underline self-start">Consultar por este servicio</NuxtLink>
         </div>
 
-        <!-- Servicio 2: Prescripción de Deudas -->
+        <!-- Servicio 2: Representación legal en procedimiento de sumarios administrativos -->
         <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col">
           <div class="flex items-center mb-4 text-brand-green">
             <Clock class="w-8 h-8 mr-3 shrink-0" />
-            <h3 class="text-xl font-bold text-brand-dark">Prescripción de Deudas</h3>
+            <h3 class="text-xl font-bold text-brand-dark">Representación legal en procedimiento de sumarios administrativos </h3>
           </div>
           <p class="text-gray-600 mb-6 flex-grow">
-            Gestionamos la declaración judicial de prescripción para deudas bancarias y comerciales (retail) para limpiar tu historial financiero de forma definitiva.
+            Defensa experta frente a sumarios administrativos del Estado. Nuestros abogados te respaldan con un servicio de excelencia, confidencial y cercano. Tu tranquilidad y seguridad desde el primer momento.
           </p>
           <NuxtLink to="/contacto?servicio=prescripcion" class="text-brand-green font-bold hover:underline self-start">Consultar por este servicio</NuxtLink>
         </div>
 
-        <!-- Servicio 3: Defensa ante Embargos -->
+        <!-- Servicio 3: Defensa en Procedimientos Penales -->
         <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col">
           <div class="flex items-center mb-4 text-brand-green">
             <ShieldCheck class="w-8 h-8 mr-3 shrink-0" />
-            <h3 class="text-xl font-bold text-brand-dark">Defensa ante Embargos</h3>
+            <h3 class="text-xl font-bold text-brand-dark">Defensa en procedimiento penales</h3>
           </div>
           <p class="text-gray-600 mb-6 flex-grow">
-            Representación urgente frente a demandas ejecutivas. Utilizamos todas las herramientas procesales para detener el embargo y proteger tus bienes.
+            Gestionamos tu defensa penal con un enfoque estratégico, humano y transparente. Escuchamos tu relato, analizamos y diseñamos una teoría del caso sólida y eficaz, sin juicios previos, con empatía y rigor.
           </p>
           <NuxtLink to="/contacto?servicio=embargos" class="text-brand-green font-bold hover:underline self-start">Consultar por este servicio</NuxtLink>
         </div>
 
-        <!-- Servicio 4: Eliminación de Antecedentes -->
+        <!-- Servicio 4: Defensa Penitenciaria -->
         <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md border border-gray-100 transition-all flex flex-col">
           <div class="flex items-center mb-4 text-brand-green">
             <Trash2 class="w-8 h-8 mr-3 shrink-0" />
-            <h3 class="text-xl font-bold text-brand-dark">Eliminación de Antecedentes</h3>
+            <h3 class="text-xl font-bold text-brand-dark">Defensa Penitenciaria</h3>
           </div>
           <p class="text-gray-600 mb-6 flex-grow">
-            Te ayudamos a ejercer tu derecho de eliminación de datos en el Boletín Comercial y otras bases de datos de riesgo para que vuelvas a ser sujeto de crédito.
-          </p>
+            Proporcionamos una defensa que contempla una serie de actuaciones judiciales y extrajudiciales, que se extienden durante el cumplimiento de la condena privativa de libertad hasta su completa ejecución. El objetivo es resguardar los intereses, garantías y derechos del condenado.
+           </p>
           <NuxtLink to="/contacto?servicio=eliminacion" class="text-brand-green font-bold hover:underline self-start">Consultar por este servicio</NuxtLink>
         </div>
 

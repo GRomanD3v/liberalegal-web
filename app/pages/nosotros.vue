@@ -20,34 +20,28 @@
     </div>
 
     <!-- Contenido -->
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto pt-16 px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
         <!-- Columna Izquierda (Texto) -->
         <div>
           <h1 class="text-brand-dark font-bold text-3xl mb-4">Nuestro Compromiso con tu Tranquilidad</h1>
           <p class="text-gray-600 mb-6 leading-relaxed">
-            Libera Legal nace con un propósito claro: democratizar el acceso a una defensa técnica y especializada
-            frente a las acciones de cobranza del Estado y grandes corporaciones. Sabemos que enfrentar retenciones de
-            impuestos o amenazas de embargo por deudas como el CAE genera una profunda angustia.
+            Libera Legal nace con un propósito claro: democratizar el acceso a una defensa técnica y especializada frente a las acciones del Estado y grandes corporaciones. Sabemos que enfrentar una acción judicial genera una profunda angustia e incertidumbre.
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed">
-            Nuestro equipo está compuesto por abogados especialistas en derecho administrativo y civil, enfocados en
-            proteger tu patrimonio con estrategias probadas. No somos un estudio jurídico tradicional; somos tu escudo
-            financiero. Actuamos con rapidez, total transparencia en nuestros honorarios y un trato humano que entiende
-            la situación por la que estás pasando.
+            Nuestro equipo está compuesto por abogados especialistas en derecho administrativo, civil y penal, enfocados en proteger tus derechos con estrategias probadas por una larga trayectoria profesional con resultados acreditables con la vasta experiencia de nuestros profesionales. No somos un estudio jurídico tradicional; somos tu escudo frente al accionar del estado e instituciones financieras. Actuamos con rapidez, total transparencia en nuestros honorarios y un trato humano que empatiza con la situación que estás enfrentando.
           </p>
           <div class="bg-white border-l-4 border-brand-green p-6 shadow-sm">
             <h3 class="font-bold text-brand-dark mb-2">Misión:</h3>
             <p class="text-gray-700 italic">
-              Restituir la libertad financiera de nuestros clientes, garantizando que todo proceso de cobro se ajuste
-              estrictamente a la ley, exigiendo la prescripción y el fin de los abusos.
+              Restituir la libertad personal y financiera de nuestros clientes, garantizando que todo proceso judicial y administrativo se ajuste estrictamente a la ley, exigiendo de manera rigurosa el respeto por los derechos que le asisten a nuestros clientes.
             </p>
           </div>
         </div>
 
         <!-- Columna Derecha (Imagen) -->
         <div class="flex items-center justify-center">
-          <img src="/abogado.jpg" alt="Nuestro Equipo Legal"
+          <img src="/nos.jpg" alt="Nuestro Equipo Legal"
             class="w-full h-auto min-h-[300px] rounded-lg shadow-md object-cover" />
         </div>
       </div>
