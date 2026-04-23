@@ -20,11 +20,15 @@
             class="inline-block px-4 py-1.5 rounded-full border-2 border-brand-light/30 bg-brand-navy backdrop-blur-sm text-sm font-semibold mb-6 shadow-xl animate-slide-up">
             Estudio Jurídico Especializado
           </div>
-          <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold leading-[1.15] mb-6 tracking-tight animate-slide-up-delay">
+          <h1
+            class="text-3xl md:text-4xl lg:text-6xl font-bold leading-[1.15] mb-6 tracking-tight animate-slide-up-delay">
             Defensa legal técnica, clara y confiable.
           </h1>
-          <p class="text-lg md:text-xl text-white mb-8 max-w-xl font-light leading-relaxed opacity-0 animate-slide-up-delay" style="animation-delay: 0.6s">
-            Recupera la tranquilidad frente a la incertidumbre legal. Entregamos informes prácticos, claros y fundamentados. Transformamos tu preocupación en soluciones estratégicas que te permitirán avanzar con certeza.
+          <p class="text-lg md:text-xl text-white mb-8 max-w-xl font-light leading-relaxed opacity-0 animate-slide-up-delay"
+            style="animation-delay: 0.6s">
+            Recupera la tranquilidad frente a la incertidumbre legal. Entregamos informes prácticos, claros y
+            fundamentados. Transformamos tu preocupación en soluciones estratégicas que te permitirán avanzar con
+            certeza.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 opacity-0 animate-slide-up-delay" style="animation-delay: 0.9s">
             <NuxtLink to="/servicios"
@@ -40,7 +44,8 @@
 
         <!-- Quick Form Column with Animation -->
         <div class="w-full lg:w-[450px] animate-slide-right">
-          <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border-t-[30px] border-brand-navy hover:shadow-3xl transition-shadow duration-300">
+          <div
+            class="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border-t-[30px] border-brand-navy hover:shadow-3xl transition-shadow duration-300">
             <h3 class="text-2xl font-bold text-brand-dark mb-2 animate-fade-in">Consulta Inmediata</h3>
             <p class="text-gray-600 mb-6 text-sm leading-relaxed">Completa el formulario y un abogado te contactará para
               orientarte de manera confidencial.</p>
@@ -73,8 +78,10 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           <div
-            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl animate-slide-up">
-            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
+            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+            data-aos="fade-up" data-aos-delay="0">
+            <div
+              class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
               <BadgeCheck class="w-10 h-10" />
             </div>
             <h3 class="font-bold text-xl text-brand-dark mb-3">Evaluación 100% Gratuita</h3>
@@ -84,19 +91,24 @@
           </div>
 
           <div
-            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl animate-slide-up" style="animation-delay: 0.1s">
-            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
+            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+            data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
               <Landmark class="w-10 h-10" />
             </div>
             <h3 class="font-bold text-xl text-brand-dark mb-3">Informe de factibilidad sin costo</h3>
             <p class="text-brand-muted leading-relaxed">
-              Remisión de informe de factibilidad jurídica, conforme a los antecedentes analizados, en el plazo de 24 horas.
+              Remisión de informe de factibilidad jurídica, conforme a los antecedentes analizados, en el plazo de 24
+              horas.
             </p>
           </div>
 
           <div
-            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl animate-slide-up" style="animation-delay: 0.2s">
-            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
+            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+            data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
               <ShieldCheck class="w-10 h-10" />
             </div>
             <h3 class="font-bold text-xl text-brand-dark mb-3">Confidencialidad Absoluta</h3>
@@ -115,7 +127,7 @@
       <div class="absolute right-0 top-1/4 w-1/3 h-1/2 bg-brand-green/5 rounded-l-full blur-3xl -z-10"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20">
+        <div class="text-center mb-20" data-aos="fade-up">
           <h2 class="text-3xl lg:text-4xl font-extrabold text-brand-dark mb-6 tracking-tight">Nuestro Proceso de Defensa
           </h2>
           <p class="text-lg text-gray-600 max-w-2xl mx-auto">Un camino claro, transparente y estratégico para proteger
@@ -130,7 +142,7 @@
 
           <div class="space-y-16">
             <!-- Step 1 -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center" data-aos="fade-up">
               <div class="md:w-1/2 flex md:justify-end mb-8 md:mb-0 md:pr-16">
                 <div
                   class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl border border-gray-100 transition-all text-right w-full md:w-[90%] relative group">
@@ -148,7 +160,7 @@
             </div>
 
             <!-- Step 2 -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center" data-aos="fade-up">
               <div class="md:w-1/2 md:pr-16 hidden md:block"></div>
               <div
                 class="absolute left-1/2 transform -translate-x-1/2 w-14 h-14 bg-brand-dark border-4 border-white rounded-full flex items-center justify-center text-white font-extrabold text-xl shadow-lg z-10 md:flex">
@@ -167,7 +179,7 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center" data-aos="fade-up">
               <div class="md:w-1/2 flex md:justify-end mb-8 md:mb-0 md:pr-16">
                 <div
                   class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl border border-gray-100 transition-all text-right w-full md:w-[90%] relative group">
@@ -185,7 +197,7 @@
             </div>
 
             <!-- Step 4 -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center" data-aos="fade-up">
               <div class="md:w-1/2 md:pr-16 hidden md:block"></div>
               <div
                 class="absolute left-1/2 transform -translate-x-1/2 w-14 h-14 bg-brand-green border-4 border-white rounded-full flex items-center justify-center text-white font-extrabold text-xl shadow-lg z-10 md:flex">
@@ -206,9 +218,10 @@
       </div>
     </section>
     <div class="bg-gradient-to-r from-brand-green to-brand-navy py-16 text-center px-6">
-      <h2 class="text-3xl font-bold text-brand-light mb-6">¿Listo para resolver tus deudas?</h2>
+      <h2 class="text-3xl font-bold text-brand-light mb-6" data-aos="zoom-in">¿Listo para resolver tus deudas?</h2>
       <NuxtLink to="/contacto"
-        class="inline-block px-8 py-4 bg-brand-navy text-white font-bold border-2 border-brand-light rounded-full hover:bg-brand-green/80 transition shadow-lg">
+        class="inline-block px-8 py-4 bg-brand-navy text-white font-bold border-2 border-brand-light rounded-full hover:bg-brand-green/80 transition shadow-lg"
+        data-aos="zoom-in">
         Contactanos Ahora
       </NuxtLink>
     </div>

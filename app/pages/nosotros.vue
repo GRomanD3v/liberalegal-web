@@ -8,7 +8,7 @@
         <img src="/justicia.jpg" alt="Fondo Justicia"
           class="w-full h-full object-cover mix-blend-multiply opacity-60" />
       </div>
-      <div class="max-w-4xl mx-auto relative z-10">
+      <div class="max-w-4xl mx-auto relative z-10" data-aos="fade">
         <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
           Nuestra Visión y <span class="text-brand-accent">Compromiso</span>
         </h1>
@@ -23,24 +23,32 @@
     <div class="max-w-6xl mx-auto pt-16 px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
         <!-- Columna Izquierda (Texto) -->
-        <div>
+        <div data-aos="fade-right">
           <h1 class="text-brand-dark font-bold text-3xl mb-4">Nuestro Compromiso con tu Tranquilidad</h1>
           <p class="text-gray-600 mb-6 leading-relaxed">
-            Libera Legal nace con un propósito claro: democratizar el acceso a una defensa técnica y especializada frente a las acciones del Estado y grandes corporaciones. Sabemos que enfrentar una acción judicial genera una profunda angustia e incertidumbre.
+            Libera Legal nace con un propósito claro: democratizar el acceso a una defensa técnica y especializada
+            frente a las acciones del Estado y grandes corporaciones. Sabemos que enfrentar una acción judicial genera
+            una profunda angustia e incertidumbre.
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed">
-            Nuestro equipo está compuesto por abogados especialistas en derecho administrativo, civil y penal, enfocados en proteger tus derechos con estrategias probadas por una larga trayectoria profesional con resultados acreditables con la vasta experiencia de nuestros profesionales. No somos un estudio jurídico tradicional; somos tu escudo frente al accionar del estado e instituciones financieras. Actuamos con rapidez, total transparencia en nuestros honorarios y un trato humano que empatiza con la situación que estás enfrentando.
+            Nuestro equipo está compuesto por abogados especialistas en derecho administrativo, civil y penal, enfocados
+            en proteger tus derechos con estrategias probadas por una larga trayectoria profesional con resultados
+            acreditables con la vasta experiencia de nuestros profesionales. No somos un estudio jurídico tradicional;
+            somos tu escudo frente al accionar del estado e instituciones financieras. Actuamos con rapidez, total
+            transparencia en nuestros honorarios y un trato humano que empatiza con la situación que estás enfrentando.
           </p>
           <div class="bg-white border-l-4 border-brand-green p-6 shadow-sm">
             <h3 class="font-bold text-brand-dark mb-2">Misión:</h3>
             <p class="text-gray-700 italic">
-              Restituir la libertad personal y financiera de nuestros clientes, garantizando que todo proceso judicial y administrativo se ajuste estrictamente a la ley, exigiendo de manera rigurosa el respeto por los derechos que le asisten a nuestros clientes.
+              Restituir la libertad personal y financiera de nuestros clientes, garantizando que todo proceso judicial y
+              administrativo se ajuste estrictamente a la ley, exigiendo de manera rigurosa el respeto por los derechos
+              que le asisten a nuestros clientes.
             </p>
           </div>
         </div>
 
         <!-- Columna Derecha (Imagen) -->
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center" data-aos="fade-left">
           <img src="/nos.jpg" alt="Nuestro Equipo Legal"
             class="w-full h-auto min-h-[300px] rounded-lg shadow-md object-cover" />
         </div>
@@ -55,7 +63,7 @@
       <div class="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
     </div>
 
-    <div class="relative z-10 w-full px-6 md:px-24 text-center">
+    <div class="relative z-10 w-full px-6 md:px-24 text-center" data-aos="fade-up">
 
       <h3 class="text-brand-accent font-bold tracking-widest uppercase text-sm md:text-sm mb-2">
         Estrategias precisas para tu defensa

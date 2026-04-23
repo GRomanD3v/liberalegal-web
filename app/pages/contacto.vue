@@ -8,7 +8,7 @@
         <img src="/justicia.jpg" alt="Fondo Justicia"
           class="w-full h-full object-cover mix-blend-multiply opacity-60" />
       </div>
-      <div class="max-w-4xl mx-auto relative z-10">
+      <div class="max-w-4xl mx-auto relative z-10" data-aos="fade">
         <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
           Hablemos de tu <span class="text-brand-accent">Caso</span>
         </h1>
@@ -24,34 +24,34 @@
 
         <!-- Info Column -->
         <div class="flex flex-col">
-          <h1 class="text-3xl font-extrabold text-brand-dark mb-8">Hablemos de tu caso</h1>
-          
+          <h1 class="text-3xl font-extrabold text-brand-dark mb-8" data-aos="fade-down">Hablemos de tu caso</h1>
+
           <div class="space-y-8 text-gray-700">
-            <div class="flex items-start">
+            <div class="flex items-start" data-aos="fade-down" data-aos-delay="100">
               <MapPin class="w-6 h-6 text-brand-green mt-1 mr-4 shrink-0" />
               <div>
                 <strong class="block text-brand-dark mb-1">Dirección:</strong>
                 <span>Santiago, Región Metropolitana (Atención presencial previa cita).</span>
               </div>
             </div>
-            
-            <div class="flex items-start">
+
+            <div class="flex items-start" data-aos="fade-down" data-aos-delay="200">
               <Clock class="w-6 h-6 text-brand-green mt-1 mr-4 shrink-0" />
               <div>
                 <strong class="block text-brand-dark mb-1">Horario:</strong>
                 <span>Lunes a Viernes de 09:00 a 18:00 hrs.</span>
               </div>
             </div>
-            
-            <div class="flex items-start">
+
+            <div class="flex items-start" data-aos="fade-down" data-aos-delay="300">
               <Phone class="w-6 h-6 text-brand-green mt-1 mr-4 shrink-0" />
               <div>
                 <strong class="block text-brand-dark mb-1">Teléfono:</strong>
                 <span>+56 9 0000 0000</span>
               </div>
             </div>
-            
-            <div class="flex items-start">
+
+            <div class="flex items-start" data-aos="fade-down" data-aos-delay="400">
               <Mail class="w-6 h-6 text-brand-green mt-1 mr-4 shrink-0" />
               <div>
                 <strong class="block text-brand-dark mb-1">Correo:</strong>
@@ -62,7 +62,7 @@
         </div>
 
         <!-- Form Column -->
-        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100" data-aos="fade-left">
 
           <div v-if="errorMsg"
             class="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl text-red-700 font-medium text-sm">
@@ -72,7 +72,8 @@
           <div v-if="showSuccess" class="h-full flex flex-col items-center justify-center text-center py-12">
             <h3 class="text-3xl font-extrabold text-brand-dark mb-4">¡Recibido exitosamente!</h3>
             <p class="text-gray-600 mb-8 px-4">
-              La información sobre tu solicitud ha ingresado a nuestra base de datos. Nos pondremos en contacto prontamente.
+              La información sobre tu solicitud ha ingresado a nuestra base de datos. Nos pondremos en contacto
+              prontamente.
             </p>
             <button @click="showSuccess = false" class="text-brand-green font-bold hover:underline">
               Enviar nueva consulta
@@ -107,7 +108,7 @@
 
             <div>
               <label class="block text-sm mb-1 text-gray-700">Tipo de Deuda</label>
-              <select v-model="form.deuda" required 
+              <select v-model="form.deuda" required
                 class="w-full px-4 py-3 rounded border border-gray-200 focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none transition-all text-gray-700 bg-white">
                 <option value="" disabled selected>Selecciona una opción</option>
                 <option value="CAE">CAE</option>
