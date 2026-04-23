@@ -25,12 +25,12 @@
         <!-- Columna Izquierda (Texto) -->
         <div data-aos="fade-right">
           <h1 class="text-brand-dark font-bold text-3xl mb-4">Nuestro Compromiso con tu Tranquilidad</h1>
-          <p class="text-gray-600 mb-6 leading-relaxed">
+          <p class="text-gray-600 mb-6 leading-relaxed text-justify">
             Libera Legal nace con un propósito claro: democratizar el acceso a una defensa técnica y especializada
             frente a las acciones del Estado y grandes corporaciones. Sabemos que enfrentar una acción judicial genera
             una profunda angustia e incertidumbre.
           </p>
-          <p class="text-gray-600 mb-8 leading-relaxed">
+          <p class="text-gray-600 mb-8 leading-relaxed text-justify">
             Nuestro equipo está compuesto por abogados especialistas en derecho administrativo, civil y penal, enfocados
             en proteger tus derechos con estrategias probadas por una larga trayectoria profesional con resultados
             acreditables con la vasta experiencia de nuestros profesionales. No somos un estudio jurídico tradicional;
@@ -39,7 +39,7 @@
           </p>
           <div class="bg-white border-l-4 border-brand-green p-6 shadow-sm">
             <h3 class="font-bold text-brand-dark mb-2">Misión:</h3>
-            <p class="text-gray-700 italic">
+            <p class="text-gray-700 text-justify">
               Restituir la libertad personal y financiera de nuestros clientes, garantizando que todo proceso judicial y
               administrativo se ajuste estrictamente a la ley, exigiendo de manera rigurosa el respeto por los derechos
               que le asisten a nuestros clientes.
