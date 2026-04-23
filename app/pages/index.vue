@@ -2,58 +2,61 @@
   <div class="bg-brand-light">
     <!-- Hero Section -->
     <section
-      class="relative w-full min-h-[600px] md:min-h-[1000px] pt-40 pb-20 md:pt-20 flex items-center bg-cover bg-center">
-      <!-- Background Image with Dark Overlay -->
-      <div class="absolute inset-0 z-0 bg-brand-dark">
+      class="relative w-full min-h-[600px] md:min-h-[1000px] pt-40 pb-20 md:pt-20 flex items-center bg-cover bg-center overflow-hidden">
+      <!-- Background Image with Dark Overlay & Animation -->
+      <div class="absolute inset-0 z-0 bg-brand-dark animate-float">
         <img src="/hero-img.jpg" alt="Defensa Legal Institucional"
           class="w-full h-full object-cover mix-blend-overlay opacity-60" />
       </div>
 
+      <!-- Animated gradient accent -->
+      <div class="absolute inset-0 z-0 bg-gradient-to-br from-brand-green/10 to-transparent opacity-40"></div>
+
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-        <!-- Text Column -->
-        <div class="flex-1 text-white">
+        <!-- Text Column with Animations -->
+        <div class="flex-1 text-white animate-fade-in">
           <div
-            class="inline-block px-4 py-1.5 rounded-full border-2 border-brand-light/30 bg-brand-navy backdrop-blur-sm text-sm font-semibold mb-6 shadow-xl">
+            class="inline-block px-4 py-1.5 rounded-full border-2 border-brand-light/30 bg-brand-navy backdrop-blur-sm text-sm font-semibold mb-6 shadow-xl animate-slide-up">
             Estudio Jurídico Especializado
           </div>
-          <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold leading-[1.15] mb-6 tracking-tight">
+          <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold leading-[1.15] mb-6 tracking-tight animate-slide-up-delay">
             Defensa legal técnica, clara y confiable.
           </h1>
-          <p class="text-lg md:text-xl text-white mb-8 max-w-xl font-light leading-relaxed">
+          <p class="text-lg md:text-xl text-white mb-8 max-w-xl font-light leading-relaxed opacity-0 animate-slide-up-delay" style="animation-delay: 0.6s">
             Recupera la tranquilidad frente a la incertidumbre legal. Entregamos informes prácticos, claros y fundamentados. Transformamos tu preocupación en soluciones estratégicas que te permitirán avanzar con certeza.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4">
+          <div class="flex flex-col sm:flex-row gap-4 opacity-0 animate-slide-up-delay" style="animation-delay: 0.9s">
             <NuxtLink to="/servicios"
-              class="inline-flex justify-center items-center px-8 py-4 border-2 border-brand-light/30 bg-brand-navy hover:bg-brand-green backdrop-blur-sm text-white font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-lg">
+              class="inline-flex justify-center items-center px-8 py-4 border-2 border-brand-light/30 bg-brand-navy hover:bg-brand-green backdrop-blur-sm text-white font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-lg hover:scale-105 hover:-translate-y-1 duration-300">
               Conoce Nuestros Servicios
             </NuxtLink>
             <NuxtLink to="/nosotros"
-              class="inline-flex justify-center items-center px-8 py-4 border-2 border-brand-light/30 bg-brand-navy hover:bg-brand-green backdrop-blur-sm text-white font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-lg">
+              class="inline-flex justify-center items-center px-8 py-4 border-2 border-brand-light/30 bg-brand-navy hover:bg-brand-green backdrop-blur-sm text-white font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-lg hover:scale-105 hover:-translate-y-1 duration-300">
               Sobre Nosotros
             </NuxtLink>
           </div>
         </div>
 
-        <!-- Quick Form Column -->
-        <div class="w-full lg:w-[450px]">
-          <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border-t-[30px] border-brand-navy">
-            <h3 class="text-2xl font-bold text-brand-dark mb-2">Consulta Inmediata</h3>
+        <!-- Quick Form Column with Animation -->
+        <div class="w-full lg:w-[450px] animate-slide-right">
+          <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border-t-[30px] border-brand-navy hover:shadow-3xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold text-brand-dark mb-2 animate-fade-in">Consulta Inmediata</h3>
             <p class="text-gray-600 mb-6 text-sm leading-relaxed">Completa el formulario y un abogado te contactará para
               orientarte de manera confidencial.</p>
             <form class="space-y-4" @submit.prevent>
               <div>
                 <input type="text" placeholder="Nombre Completo" required
-                  class="w-full px-5 py-3.5 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-4 focus:ring-brand-green/10 outline-none transition-all bg-gray-50/50 focus:bg-white text-brand-dark">
+                  class="w-full px-5 py-3.5 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-4 focus:ring-brand-green/10 outline-none transition-all bg-gray-50/50 focus:bg-white text-brand-dark hover:border-brand-green/30">
               </div>
               <div class="grid grid-cols-2 gap-4">
                 <input type="text" placeholder="RUT" required
-                  class="w-full px-5 py-3.5 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-4 focus:ring-brand-green/10 outline-none transition-all bg-gray-50/50 focus:bg-white text-brand-dark">
+                  class="w-full px-5 py-3.5 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-4 focus:ring-brand-green/10 outline-none transition-all bg-gray-50/50 focus:bg-white text-brand-dark hover:border-brand-green/30">
                 <input type="tel" placeholder="Teléfono" required
-                  class="w-full px-5 py-3.5 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-4 focus:ring-brand-green/10 outline-none transition-all bg-gray-50/50 focus:bg-white text-brand-dark">
+                  class="w-full px-5 py-3.5 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-4 focus:ring-brand-green/10 outline-none transition-all bg-gray-50/50 focus:bg-white text-brand-dark hover:border-brand-green/30">
               </div>
               <button
-                class="w-full bg-brand-dark hover:bg-brand-green text-white font-bold py-4 rounded-xl transition-colors shadow-lg mt-2 text-lg">
+                class="w-full bg-brand-dark hover:bg-brand-green text-white font-bold py-4 rounded-xl transition-all shadow-lg mt-2 text-lg hover:scale-105 hover:-translate-y-1 duration-300">
                 Solicitar Análisis Legal
               </button>
               <p class="text-xs text-gray-400 text-center mt-4">Tus datos están protegidos por secreto profesional.</p>
@@ -70,8 +73,8 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           <div
-            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-transform duration-300 hover:-translate-y-2">
-            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50">
+            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl animate-slide-up">
+            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
               <BadgeCheck class="w-10 h-10" />
             </div>
             <h3 class="font-bold text-xl text-brand-dark mb-3">Evaluación 100% Gratuita</h3>
@@ -81,8 +84,8 @@
           </div>
 
           <div
-            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-transform duration-300 hover:-translate-y-2">
-            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50">
+            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl animate-slide-up" style="animation-delay: 0.1s">
+            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
               <Landmark class="w-10 h-10" />
             </div>
             <h3 class="font-bold text-xl text-brand-dark mb-3">Informe de factibilidad sin costo</h3>
@@ -92,8 +95,8 @@
           </div>
 
           <div
-            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-transform duration-300 hover:-translate-y-2">
-            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50">
+            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl animate-slide-up" style="animation-delay: 0.2s">
+            <div class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
               <ShieldCheck class="w-10 h-10" />
             </div>
             <h3 class="font-bold text-xl text-brand-dark mb-3">Confidencialidad Absoluta</h3>
