@@ -72,51 +72,19 @@
     </section>
 
     <!-- Trust Bar -->
-    <div class="w-full h-full bg-gradient-to-r from-brand-green to-brand-navy py-32">
-      <div class="max-w-7xl mx-auto px-4">
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-          <div
-            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-            data-aos="fade-up" data-aos-delay="0">
-            <div
-              class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
-              <BadgeCheck class="w-10 h-10" />
-            </div>
-            <h3 class="font-bold text-xl text-brand-dark mb-3">Evaluación 100% Gratuita</h3>
-            <p class="text-brand-muted leading-relaxed">
-              Analizamos tu conflicto de relevancia jurídica sin costo inicial para diseñar la mejor estrategia legal.
-            </p>
-          </div>
-
-          <div
-            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-            data-aos="fade-up" data-aos-delay="100">
-            <div
-              class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
-              <Landmark class="w-10 h-10" />
-            </div>
-            <h3 class="font-bold text-xl text-brand-dark mb-3">Informe de factibilidad sin costo</h3>
-            <p class="text-brand-muted leading-relaxed">
-              Remisión de informe de factibilidad jurídica, conforme a los antecedentes analizados, en el plazo de 24
-              horas.
-            </p>
-          </div>
-
-          <div
-            class="bg-white border border-brand-light/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-            data-aos="fade-up" data-aos-delay="200">
-            <div
-              class="bg-brand-light p-4 rounded-full mb-5 text-brand-green ring-4 ring-brand-light/50 animate-pulse-subtle">
-              <ShieldCheck class="w-10 h-10" />
-            </div>
-            <h3 class="font-bold text-xl text-brand-dark mb-3">Confidencialidad Absoluta</h3>
-            <p class="text-brand-muted leading-relaxed">
-              Tu información está estrictamente protegida bajo nuestro secreto profesional en todo momento.
-            </p>
-          </div>
-
+    <div class="w-full bg-brand-green text-brand-light py-6">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-around items-center gap-6">
+        <div class="flex items-center gap-3">
+          <CheckCircle class="w-6 h-6 shrink-0" />
+          <span class="font-semibold text-lg">Evaluación 100% Gratuita</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <CheckCircle class="w-6 h-6 shrink-0" />
+          <span class="font-semibold text-lg">Especialistas en Tesorería</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <CheckCircle class="w-6 h-6 shrink-0" />
+          <span class="font-semibold text-lg">Confidencialidad Absoluta</span>
         </div>
       </div>
     </div>
@@ -230,7 +198,7 @@
 </template>
 
 <script setup>
-import { BadgeCheck, Landmark, ShieldCheck } from 'lucide-vue-next'
+import { BadgeCheck, Landmark, ShieldCheck, CheckCircle } from 'lucide-vue-next'
 useHead({
   title: 'Inicio | Liberalegal',
   meta: [

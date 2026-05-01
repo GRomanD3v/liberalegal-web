@@ -14,5 +14,11 @@ export default defineNuxtConfig({
         }
       ]
     }
+  },
+  runtimeConfig: {
+    smtpHost: process.env.SMTP_HOST || 'solu25.tuwebdns.net',
+    smtpPort: process.env.SMTP_PORT ? parseInt(process.env.SMTP_PORT) : 465,
+    smtpUser: process.env.SMTP_USER || 'estrategiajuridica@liberalegal.cl',
+    smtpPass: process.env.SMTP_PASS,
   }
 })
