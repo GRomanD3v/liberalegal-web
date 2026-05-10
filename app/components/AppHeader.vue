@@ -16,10 +16,7 @@ const navLinks = [
   { name: 'Contacto', href: '/contacto' },
 ]
 
-const navigateToContact = () => {
-  isMenuOpen.value = false;
-  router.push('/contacto')
-}
+
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 20
@@ -53,10 +50,7 @@ onUnmounted(() => {
             active-class="text-brand-green bg-brand-green/20 font-extrabold shadow-sm">
             {{ link.name }}
           </NuxtLink>
-          <button @click="navigateToContact"
-            class="bg-brand-navy hover:bg-brand-green text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-            Defiende tu CAE
-          </button>
+
         </nav>
 
         <!-- Mobile Menu Toggle -->
@@ -83,12 +77,7 @@ onUnmounted(() => {
             active-class="text-brand-green bg-brand-navy/10 font-extrabold border-l-[20px] border-brand-green">
             {{ link.name }}
           </NuxtLink>
-          <div class="pt-4 pb-2 px-2">
-            <button @click="navigateToContact"
-              class="w-full flex justify-center items-center bg-brand-navy hover:bg-brand-green text-white px-6 py-3.5 rounded-xl font-bold transition-all shadow-md">
-              Defiende tu CAE
-            </button>
-          </div>
+
         </div>
       </div>
     </transition>
