@@ -47,7 +47,7 @@
               <Phone class="w-6 h-6 text-brand-green mt-1 mr-4 shrink-0" />
               <div>
                 <strong class="block text-brand-dark mb-1">Teléfono:</strong>
-                <span>+56 9 0000 0000</span>
+                <span>+56 9 9661 6321</span>
               </div>
             </div>
 

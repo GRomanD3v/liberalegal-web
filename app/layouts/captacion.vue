@@ -51,7 +51,7 @@
           <h3 class="text-lg font-bold text-white mb-6">Contacto</h3>
           <ul class="space-y-4 text-sm text-gray-400">
             <li>contacto@liberalegal.cl</li>
-            <li>+56 9 0000 0000</li>
+            <li>+56 9 9661 6321</li>
             <li>Santiago, Chile</li>
           </ul>
         </div>
