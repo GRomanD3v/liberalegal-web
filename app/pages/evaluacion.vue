@@ -278,10 +278,7 @@
         <div class="w-20 h-20 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
           <Check class="w-10 h-10" />
         </div>
-        <h2 class="text-3xl font-bold text-brand-dark mb-4">¡Evaluación enviada con éxito!</h2>
-        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Tu situación será evaluada por nuestros profesionales y te responderemos por correo indicando si tu causa es factible.
-        </p>
+        <h2 class="text-3xl font-bold text-brand-dark mb-4">¡Tus respuestas han sido recibidas con éxito!</h2>
         <button @click="resetForm"
           class="px-8 py-4 bg-brand-navy hover:bg-brand-green text-white font-bold rounded-xl transition-all inline-flex items-center gap-2">
           Hacer una nueva evaluación

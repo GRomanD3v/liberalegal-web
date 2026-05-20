@@ -129,9 +129,9 @@
             <div
               class="w-14 h-14 bg-green-500/90 text-white rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
               2</div>
-            <h3 class="text-2xl font-bold mb-4">Recibe tu informe</h3>
-            <p class="text-gray-300 font-light text-lg leading-relaxed">En segundos obtienes un informe de viabilidad
-              con los procedimientos jurídicos que la ley pone a tu disposición.</p>
+            <h3 class="text-2xl font-bold mb-4">Recibimos tus respuestas</h3>
+            <p class="text-gray-300 font-light text-lg leading-relaxed">Nuestro equipo jurídico revisa personalmente tu caso y prepara tu informe de factibilidad.
+              Lo recibirás en un plazo máximo de 24 horas.</p>
           </div>
           <!-- Paso 3 -->
           <div
