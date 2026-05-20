@@ -21,20 +21,15 @@
           Evaluación Gratuita · Sin Compromiso
         </div>
 
-        <span
-          class="text-green-500 font-extrabold tracking-widest uppercase mb-4 text-ms md:text-lg animate-slide-up">LIBERA
-          Deudas</span>
-
         <h1
           class="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight animate-slide-up"
           style="animation-delay: 0.1s">
-          Descubre si la ley te permite <span class="text-green-500">eliminar</span> tus deudas
+          Descubre si la ley te permite <span class="text-green-500">borrar</span> tus deudas
         </h1>
 
         <p class="text-lg md:text-2xl text-gray-300 mb-10 max-w-3xl font-light leading-relaxed animate-slide-up"
           style="animation-delay: 0.2s">
-          Responde 7 preguntas y recibe en segundos un informe jurídico con las opciones legales reales disponibles para
-          tu situación.
+          Responde 7 preguntas y recibe en 24 horas un informe de Factibilidad Técnica-judicial
         </p>
 
         <!-- Pills / Etiquetas -->
@@ -47,10 +42,10 @@
             Confidencial</span>
           <span
             class="bg-green-500/10 border border-green-500/20 text-white rounded-full px-5 py-2 font-semibold text-sm backdrop-blur-sm">✓
-            2 minutos</span>
+            Cobertura en todo Chile</span>
           <span
             class="bg-green-500/10 border border-green-500/20 text-white rounded-full px-5 py-2 font-semibold text-sm backdrop-blur-sm">✓
-            Sin datos bancarios</span>
+            Sin datos bancarios/Sin RUT</span>
         </div>
 
         <NuxtLink to="/evaluacion"
@@ -59,8 +54,8 @@
           Evaluar mi caso ahora
           <ArrowRight class="w-6 h-6" />
         </NuxtLink>
-        <p class="text-brand-light/60 mt-4 text-sm font-medium animate-slide-up" style="animation-delay: 0.5s">Solo 7
-          preguntas - Resultado inmediato - Sin RUT</p>
+        <p class="text-brand-light/60 mt-4 text-sm font-medium animate-slide-up" style="animation-delay: 0.5s">Informe
+          personalizado - revisión experta en 24 horas</p>
       </div>
     </section>
 
@@ -92,7 +87,7 @@
           <AlertCircle class="w-8 h-8" />
         </div>
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark mb-6 tracking-tight leading-tight">
-          ¿Tienes deudas con el CAE, bancos o casas comerciales?
+          No importa el origen de tu deuda: ya sea bancaria, comercial, educativa o de salud.
         </h2>
         <p class="text-xl text-gray-600 mb-8 font-medium max-w-4xl mx-auto leading-relaxed">
           La Ley de Insolvencia y Reemprendimiento permite a personas naturales iniciar un proceso legal para renegociar
@@ -181,8 +176,6 @@
                 </div>
                 <h3 class="text-2xl font-bold text-brand-dark">Informe de Factibilidad Técnica-Judicial</h3>
               </div>
-              <p class="text-brand-muted text-sm font-medium">Generado automáticamente · Con membrete LIBERA Legal ·
-                Descargable en PDF</p>
             </div>
             <ul class="space-y-6">
               <li class="flex items-start gap-4">
@@ -199,11 +192,6 @@
                 <CheckCircle2 class="w-6 h-6 text-brand-green shrink-0 mt-0.5" />
                 <span class="font-medium text-gray-700 text-lg">Próximas acciones concretas recomendadas por el estudio
                   jurídico</span>
-              </li>
-              <li class="flex items-start gap-4">
-                <CheckCircle2 class="w-6 h-6 text-brand-green shrink-0 mt-0.5" />
-                <span class="font-medium text-gray-700 text-lg">PDF descargable con membrete oficial LIBERA Legal para
-                  tu archivo personal</span>
               </li>
             </ul>
           </div>
@@ -233,9 +221,12 @@
               con el proceso.</p>
           </div>
           <div class="bg-brand-light/50 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Necesito llevar documentos?</h3>
-            <p class="text-gray-600 font-medium">No. Solo responder 7 preguntas de selección. Sin subir archivos ni
-              entregar RUT.</p>
+            <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Por qué el informe tarda hasta 24 horas y no es
+              inmediato?</h3>
+            <p class="text-gray-600 font-medium">Porque no creemos en soluciones masivas de software. Cada situación
+              financiera en Chile es única. Para garantizarte opciones reales y un documento técnico-judicial con
+              validez, un miembro de nuestro equipo legal revisa personalmente tus respuestas antes de emitir el informe
+              con el membrete de Libera Legal.</p>
           </div>
           <div class="bg-brand-light/50 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
             <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Mis datos están seguros?</h3>
@@ -243,9 +234,11 @@
               contactarte directamente.</p>
           </div>
           <div class="bg-brand-light/50 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Sirve si ya tengo cobranza activa?</h3>
-            <p class="text-gray-600 font-medium">Sí. El formulario evalúa precisamente situaciones con cobranza
-              extrajudicial y demandas.</p>
+            <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Atienden a personas de regiones fuera de Santiago?</h3>
+            <p class="text-gray-600 font-medium">Sí, absolutamente. Libera Legal cuenta con cobertura nacional. Gracias
+              a la digitalización de los Tribunales de Justicia y de la Tesorería General de la República (TGR), podemos
+              tramitar y defender tu caso en cualquier región de Chile de forma 100% online y sin que tengas que salir
+              de tu hogar.</p>
           </div>
         </div>
       </div>
@@ -263,12 +256,9 @@
 
       <div class="max-w-4xl mx-auto relative z-10">
         <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-tight leading-tight">
-          La deuda no se va sola. <br><span class="text-green-500 block mt-2">Pero la ley puede cambiar eso.</span>
+          Tu tranquilidad financiera <br><span class="text-green-500 block mt-2">tiene una salida legal. Da el primer
+            paso para proteger tu patrimonio y empezar de nuevo.</span>
         </h2>
-        <p class="text-xl text-gray-300 font-light mb-12 max-w-2xl mx-auto leading-relaxed">
-          Descubre en 2 minutos si calificas para un procedimiento legal que elimine tus deudas. Sin costo. Sin
-          compromiso.
-        </p>
         <NuxtLink to="/evaluacion"
           class="inline-flex justify-center items-center gap-2 px-12 py-5 bg-green-500 hover:bg-brand-light hover:text-brand-dark text-white font-bold rounded-xl transition-all shadow-[0_0_40px_rgba(58,90,64,0.4)] hover:shadow-[0_0_60px_rgba(58,90,64,0.6)] text-xl hover:scale-105 hover:-translate-y-1 duration-300 uppercase tracking-wide">
           Comenzar mi evaluación gratuita

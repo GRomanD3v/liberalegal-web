@@ -14,32 +14,6 @@
           <div class="flex items-center gap-3 mb-6">
             <img src="/logo-white.png" alt="Liberalegal" class="h-10 w-auto opacity-90" />
           </div>
-          <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
-            Expertos en derecho administrativo y defensa de deudores. Recuperamos tu tranquilidad patrimonial frente a
-            la Tesorería General de la República y otras instituciones financieras.
-          </p>
-        </div>
-
-        <!-- Enlaces Rápidos -->
-        <div data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-lg font-bold text-white mb-6">Navegación</h3>
-          <ul class="space-y-4">
-            <li>
-              <NuxtLink to="/" class="text-gray-400 hover:text-white transition-colors">Inicio</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/servicios" class="text-gray-400 hover:text-white transition-colors">Servicios
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/nosotros" class="text-gray-400 hover:text-white transition-colors">Nosotros
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/contacto" class="text-gray-400 hover:text-white transition-colors">Contacto
-              </NuxtLink>
-            </li>
-          </ul>
         </div>
 
         <!-- Contacto -->
@@ -48,7 +22,6 @@
           <ul class="space-y-4 text-sm text-gray-400">
             <li>contacto@liberalegal.cl</li>
             <li>+56 9 9661 6321</li>
-            <li>Santiago, Chile</li>
           </ul>
         </div>
       </div>
