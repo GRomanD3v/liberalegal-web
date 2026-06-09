@@ -374,6 +374,15 @@ const generarInforme = async () => {
   // Genera el objeto 'informe'
   procesarLogica()
 
+  // Conversión Google Ads
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('event', 'conversion', {
+      'send_to': 'AW-18195127031/j3mGCOyekbUcEPe1juRD',
+      'value': 1.0,
+      'currency': 'CLP'
+    });
+  }
+
   try {
     // Enviar el correo usando nuestra API interna de Nuxt
     await $fetch('/api/send-report', {
@@ -394,14 +403,7 @@ const generarInforme = async () => {
   isGenerating.value = false
   informeGenerado.value = true
 
-  // Event snippet for Vista de página conversion page
-  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-    window.gtag('event', 'conversion', {
-      'send_to': 'AW-18195127031/j3mGCOyekbUcEPe1juRD',
-      'value': 1.0,
-      'currency': 'CLP'
-    });
-  }
+
 
   // Scroll to report
   setTimeout(() => {
