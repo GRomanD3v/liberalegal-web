@@ -5,11 +5,14 @@
     <div class="bg-brand-navy text-white pt-10 pb-16 px-4">
       <div class="max-w-4xl mx-auto">
         <div
-          class="inline-block px-3 py-1 border border-green-500/50 rounded-full text-green-500 text-xs font-bold uppercase tracking-widest mb-4 bg-brand-dark">
+          class="inline-block px-3 py-1 border border-green-500/50 rounded-full text-green-500 text-xs font-bold uppercase tracking-[0.1em] mb-4 bg-brand-dark">
           Evaluación Gratuita
         </div>
-        <h1 class="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Informe de Factibilidad Técnica-Judicial</h1>
-        <p class="text-brand-light/80 max-w-2xl leading-relaxed font-light">
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold mb-5 tracking-[0.03em]">
+          Informe de Factibilidad<br>
+          <span class="font-bold text-green-500">Técnica - Judicial</span>
+        </h1>
+        <p class="text-brand-light/80 max-w-2xl leading-relaxed font-normal">
           Responde el siguiente cuestionario. En base a tus respuestas generaremos un informe preliminar de viabilidad
           conforme a la Ley N° 20.720 de Insolvencia y Reemprendimiento.
         </p>
@@ -18,9 +21,9 @@
 
     <!-- Progress Bar -->
     <div class="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-sm" v-if="!isDisqualified && !isSubmitted">
-      <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
-        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest">Avance del cuestionario</span>
-        <span class="text-xs font-bold text-brand-navy uppercase tracking-widest">Paso {{ currentStep }} de 7</span>
+      <div class="max-w-4xl mx-auto px-4 py-8 flex items-center justify-between">
+        <span class="text-base font-bold text-gray-500 uppercase tracking-widest">Avance del cuestionario</span>
+        <span class="text-base font-bold text-brand-navy uppercase tracking-widest">Paso {{ currentStep }} de 7</span>
       </div>
       <div class="w-full h-1 bg-gray-100">
         <div class="h-full bg-brand-green transition-all duration-500 ease-out" :style="{ width: progressPercent + '%' }">
@@ -29,7 +32,7 @@
     </div>
 
     <!-- Main Container -->
-    <main class="max-w-4xl mx-auto px-4 -mt-8 relative z-10 pb-16">
+    <main class="max-w-4xl mx-auto px-4 mt-16 relative z-10 pb-16">
       <div id="evaluacion-card" class="scroll-mt-6">
 
         <!-- PANTALLA DE DESCALIFICACIÓN -->
