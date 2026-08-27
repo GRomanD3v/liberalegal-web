@@ -35,5 +35,6 @@ export default defineNuxtConfig({
     smtpPort: process.env.SMTP_PORT ? parseInt(process.env.SMTP_PORT) : 465,
     smtpUser: process.env.SMTP_USER || 'estrategiajuridica@liberalegal.cl',
     smtpPass: process.env.SMTP_PASS,
+    leadInbox: process.env.LEAD_INBOX || 'estrategiajuridica@liberalegal.cl',
   }
 })
