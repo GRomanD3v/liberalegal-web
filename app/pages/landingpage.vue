@@ -17,14 +17,14 @@
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
 
         <div
-          class="inline-block px-4 py-1.5 rounded-full border border-brand-light/20 bg-white/10 backdrop-blur-sm text-brand-light text-sm font-semibold mb-6 shadow-xl animate-fade-in uppercase tracking-wider">
+          class="inline-block px-4 py-1.5 rounded-full border border-brand-green/20 bg-green-500/20 backdrop-blur-sm text-white text-sm mb-6 shadow-xl animate-fade-in uppercase tracking-wider">
           Evaluación Gratuita · Sin Compromiso
         </div>
 
         <h1
-          class="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight animate-slide-up"
+          class="text-4xl/snug md:text-5xl/snug lg:text-7xl/tight font-bold text-white mb-6 animate-slide-up"
           style="animation-delay: 0.1s">
-          Descubre si la ley te permite <span class="text-green-500">borrar</span> tus deudas
+          Descubre si la ley te permite <span class="text-green-500">eliminar</span> tus deudas
         </h1>
 
         <p class="text-lg md:text-2xl text-gray-300 mb-10 max-w-3xl font-light leading-relaxed animate-slide-up"
@@ -49,7 +49,7 @@
         </div>
 
         <NuxtLink to="/evaluacion"
-          class="inline-flex justify-center items-center gap-2 px-10 py-5 bg-green-500 hover:bg-brand-light hover:text-brand-dark text-white font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-xl hover:scale-105 hover:-translate-y-1 duration-300 animate-slide-up uppercase tracking-wide"
+          class="inline-flex justify-center items-center gap-2 px-10 py-5 bg-brand-light hover:bg-brand-green hover:text-brand-light text-brand-dark font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-xl hover:scale-105 hover:-translate-y-1 duration-300 animate-slide-up uppercase tracking-wide"
           style="animation-delay: 0.4s">
           Evaluar mi caso ahora
           <ArrowRight class="w-6 h-6" />
@@ -60,41 +60,39 @@
     </section>
 
     <!-- Trust Bar -->
-    <section class="w-full bg-white text-brand-dark py-24 px-4 shadow-md relative z-20">
+    <section class="w-full bg-brand-navy text-white pb-20 shadow-md relative z-20">
       <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 text-center">
-        <div class="flex-1 flex flex-col items-center">
-          <h3 class="font-bold text-2xl text-brand-green mb-2">Ley 20.720</h3>
-          <p class="text-brand-muted leading-tight font-medium">Marco legal que protege al deudor en Chile</p>
+        <div class="flex-1 flex flex-col items-center bg-brand-light/5 py-8 px-6 rounded-xl">
+          <h3 class="font-bold text-2xl text-brand-slate mb-2">Ley 20.720</h3>
+          <p class="text-brand-slate leading-tight font-medium">Marco legal que protege al deudor en Chile</p>
         </div>
-        <div class="hidden md:block w-px h-16 bg-gray-200"></div>
-        <div class="flex-1 flex flex-col items-center">
-          <h3 class="font-bold text-2xl text-brand-green mb-2">48 hrs</h3>
-          <p class="text-brand-muted leading-tight font-medium">Tiempo máximo para que un abogado te contacte</p>
+        <div class="flex-1 flex flex-col items-center bg-brand-light/5 py-8 px-6 rounded-xl">
+          <h3 class="font-bold text-2xl text-brand-slate mb-2">48 hrs</h3>
+          <p class="text-brand-slate leading-tight font-medium">Tiempo máximo para que un abogado te contacte</p>
         </div>
-        <div class="hidden md:block w-px h-16 bg-gray-200"></div>
-        <div class="flex-1 flex flex-col items-center">
-          <h3 class="font-bold text-2xl text-brand-green mb-2">$0</h3>
-          <p class="text-brand-muted leading-tight font-medium">Costo de la evaluación y primera consulta</p>
+        <div class="flex-1 flex flex-col items-center bg-brand-light/5 py-8 px-6 rounded-xl">
+          <h3 class="font-bold text-2xl text-brand-slate mb-2">$0</h3>
+          <p class="text-brand-slate leading-tight font-medium">Costo de la evaluación y primera consulta</p>
         </div>
       </div>
     </section>
 
     <!-- Urgencia -->
-    <section class="w-full bg-brand-light py-20 px-4">
-      <div class="max-w-5xl mx-auto bg-white rounded-3xl p-10 md:p-14 shadow-xl text-center border border-gray-100">
+    <section class="w-full bg-brand-light py-8 px-4">
+      <div class="max-w-5xl mx-auto py-20 md:py-20 text-center">
         <div
-          class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-green/10 text-brand-green mb-6">
-          <AlertCircle class="w-8 h-8" />
+          class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-brand-green/10 text-brand-navy mb-6">
+          <AlertCircle class="w-16 h-16" />
         </div>
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark mb-6 tracking-tight leading-tight">
-          No importa el origen de tu deuda: ya sea bancaria, comercial, educativa o de salud.
+        <h2 class="text-2xl md:text-3xl lg:text-4xl/tight text-brand-dark mb-6 flex flex-col">
+          No importa el origen de tu deuda:<br>ya sea bancaria, comercial, educativa o de salud.
         </h2>
         <p class="text-xl text-gray-600 mb-8 font-medium max-w-4xl mx-auto leading-relaxed">
           La Ley de Insolvencia y Reemprendimiento permite a personas naturales iniciar un proceso legal para renegociar
           o eliminar deudas.
         </p>
         <div
-          class="inline-block bg-green-500/10 border border-green-500 text-green-500 px-8 py-3 rounded-full font-bold text-lg">
+          class="inline-block text-brand-navy px-8 py-3 font-bold text-2xl">
           Muchas personas no saben que califican.
         </div>
       </div>
@@ -102,30 +100,30 @@
 
     <!-- Cómo Funciona -->
     <section class="w-full py-24 px-4 bg-brand-navy relative overflow-hidden text-white">
-      <div class="absolute inset-0 z-0 bg-gradient-to-t from-brand-dark/50 to-transparent"></div>
+      <div class="absolute inset-0 z-0 bg-gradient-to-t from-brand-green/20 to-transparent"></div>
 
       <div class="max-w-6xl mx-auto relative z-10">
         <div class="mb-20 text-center">
           <span
-            class="bg-green-500/10 border border-green-500/20 text-green-500 rounded-full px-5 py-2 font-semibold text-lg backdrop-blur-sm">Cómo
-            funciona</span>
-          <h2 class="text-4xl md:text-5xl mt-6 font-bold tracking-tight">De la duda al plan de acción en 3 pasos</h2>
+            class="bg-green-500/10 border border-green-500/20 text-green-500 rounded-full px-5 py-2 text-xs font-bold uppercase">¿Cómo
+            funciona?</span>
+          <h2 class="text-3xl md:text-4xl mt-6 font-bold tracking-tight">De la duda al plan de acción en 3 pasos</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
           <!-- Paso 1 -->
           <div
-            class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-10 hover:bg-white/10 transition-colors">
+            class="bg-white/5 border border-white/10 rounded-2xl px-2 py-8 flex flex-col items-center text-center hover:bg-white/10 transition-colors">
             <div
               class="w-14 h-14 bg-green-500/90 text-white rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
               1</div>
-            <h3 class="text-2xl font-bold mb-4">Responde 7 preguntas</h3>
+            <h3 class="text-2xl font-semibold mb-4">Responde 7 preguntas</h3>
             <p class="text-gray-300 font-light text-lg leading-relaxed">Sin RUT ni datos bancarios. Solo tu situación
               financiera básica para evaluar tu caso.</p>
           </div>
           <!-- Paso 2 -->
           <div
-            class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-10 hover:bg-white/10 transition-colors md:mt-8">
+            class="bg-white/5 border border-white/10 rounded-2xl px-2 py-8 flex flex-col items-center text-center hover:bg-white/10 transition-colors">
             <div
               class="w-14 h-14 bg-green-500/90 text-white rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
               2</div>
@@ -135,7 +133,7 @@
           </div>
           <!-- Paso 3 -->
           <div
-            class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-10 hover:bg-white/10 transition-colors md:mt-16">
+            class="bg-white/5 border border-white/10 rounded-2xl px-8 py-8 flex flex-col items-center text-center hover:bg-white/10 transition-colors">
             <div
               class="w-14 h-14 bg-green-500/90 text-white rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
               3</div>
@@ -157,13 +155,13 @@
 
       <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
         <div class="flex-1">
-          <span class="text-green-500 font-bold uppercase tracking-widest text-sm mb-4 block">Qué recibes</span>
-          <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white tracking-tight leading-tight">Tu informe de
+          <span class="text-green-500 font-bold uppercase tracking-widest text-xs mb-4 inline-block bg-white/5 border border-green-500/20 rounded-full px-5 py-2">¿Qué recibes?</span>
+          <h2 class="text-2xl md:text-4xl font-bold mb-8 text-white tracking-wide leading-tight">Tu informe de
             viabilidad incluye</h2>
           <NuxtLink to="/evaluacion"
-            class="hidden lg:inline-flex justify-center items-center gap-2 px-8 py-4 bg-green-500/90 hover:bg-white text-white hover:text-brand-navy font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-lg hover:scale-105 hover:-translate-y-1 duration-300 uppercase tracking-wide">
+            class="hidden lg:inline-flex justify-center items-center gap-2 px-8 py-4 bg-white hover:bg-green-500/90 text-black hover:text-white font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-base hover:scale-100 hover:-translate-y-1 duration-300 uppercase tracking-wide">
             Quiero mi informe
-            <ArrowRight class="w-5 h-5" />
+            <ArrowRight class="w-5 h-5 font-bold" />
           </NuxtLink>
         </div>
 
@@ -206,7 +204,7 @@
 
     <!-- Preguntas Frecuentes -->
     <section class="w-full py-24 px-4 bg-white relative">
-      <div class="max-w-4xl mx-auto">
+      <div class="max-w-7xl mx-auto">
         <div class="mb-16 text-center">
           <span class="text-brand-green font-bold uppercase tracking-widest text-sm mb-4 block">Preguntas
             frecuentes</span>
@@ -215,12 +213,12 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-brand-light/50 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
+          <div class="bg-brand-navy/10 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
             <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Esto me obliga a contratar?</h3>
             <p class="text-gray-600 font-medium">No. La evaluación es gratuita y sin compromiso. Decides tú si continuar
               con el proceso.</p>
           </div>
-          <div class="bg-brand-light/50 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
+          <div class="bg-brand-navy/10 Border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
             <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Por qué el informe tarda hasta 24 horas y no es
               inmediato?</h3>
             <p class="text-gray-600 font-medium">Porque no creemos en soluciones masivas de software. Cada situación
@@ -228,12 +226,12 @@
               validez, un miembro de nuestro equipo legal revisa personalmente tus respuestas antes de emitir el informe
               con el membrete de Libera Legal.</p>
           </div>
-          <div class="bg-brand-light/50 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
+          <div class="bg-brand-navy/10 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
             <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Mis datos están seguros?</h3>
             <p class="text-gray-600 font-medium">Tu información es confidencial y solo la usa el estudio para
               contactarte directamente.</p>
           </div>
-          <div class="bg-brand-light/50 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
+          <div class="bg-brand-navy/10 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
             <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Atienden a personas de regiones fuera de Santiago?</h3>
             <p class="text-gray-600 font-medium">Sí, absolutamente. Libera Legal cuenta con cobertura nacional. Gracias
               a la digitalización de los Tribunales de Justicia y de la Tesorería General de la República (TGR), podemos
@@ -244,24 +242,43 @@
       </div>
     </section>
 
-    <!-- Bottom CTA -->
-    <section class="w-full py-32 px-4 bg-brand-navy text-center relative overflow-hidden">
-      <!-- Decoración de fondo -->
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border-[1px] border-brand-green/20 rounded-full z-0">
-      </div>
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border-[1px] border-brand-green/20 rounded-full z-0">
-      </div>
+    <!-- Antes de responder el test -->
+    <section class="w-full py-24 px-4 bg-brand-navy relative">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16 text-center">
+          <p class="text-brand-green font-medium text-2xl pb-2">Lee esta información importante</p>
+          <h2 class="text-2xl md:text-4xl font-bold text-brand-light tracking-wide pb-2">Antes de responder nuestro test</h2>
+          <p class="text-brand-light/70 text-lg pt-2 max-w-4xl mx-auto">Queremos cuidar tu tiempo y ayudarte con total transparencia. Este rápido cuestionario de 1 minuto analizará tu situación financiera para verificar si cumples con las condiciones que exige la Ley 20.720 (Ley de Insolvencia). Al completarlo, sabrás de inmediato si tu caso es viable y evitarás perder tiempo en reuniones o asesorías con abogados si tu perfil no califica.</p>
+        </div>
 
-      <div class="max-w-4xl mx-auto relative z-10">
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-tight leading-tight">
-          Tu tranquilidad financiera <br><span class="text-green-500 block mt-2">tiene una salida legal. Da el primer
-            paso para proteger tu patrimonio y empezar de nuevo.</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="border bg-brand-light border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
+            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green">Regla 1:</span> Estar en verdadero estado de insolvencia</h3>
+            <p class="text-brand-dark font-medium">Para acogerse a este procedimiento legal, no basta con tener deudas; <span class="font-bold">es necesario estar en estado de insolvencia.</span></p>
+            <p class="text-brand-dark font-medium pt-4"><span class="font-bold">¿Qué significa estar en insolvencia?</span> Significa que tus ingresos actuales no te permiten cubrir tus gastos básicos de vida y, al mismo tiempo, pagar las cuotas de tus deudas. Es decir, cuando tu presupuesto mensual colapsó y te resulta técnicamente imposible cumplir con tus compromisos financieros.</p>
+          </div>
+          <div class="border bg-brand-light border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
+            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green">Regla 2:</span> Disposición a entregar tu patrimonio para eliminar tus deudas</h3>
+            <span class="font-bold text-brand-dark">*Si tienes bienes o derechos a tu nombre (casas, departamentos, vehículos, terrenos, derechos hereditarios, participación en sociedades, etc.):</span>
+            <p class="text-brand-dark font-medium pt-4">Debes estar dispuesto/a a que estos activos sean entregados y liquidados dentro del proceso legal para saldar las deudas. Si tienes de alto valor que no deseas perder, este procedimiento no es la alternativa adecuada para ti.</p>
+            <span class="text-brand-dark font-medium pt-4 block"><span class="font-bold">*Si NO tienes bienes inmuebles ni vehículos a tu nombre: </span>¡También puedes acogerte! La ley permite liquidar y eliminar la totalidad de tus deudas entregando bienes muebles básicos y enseres de tu hogar (como por ejemplo: un televisor, una lavadora, una cafetera, un juego de comedor, etc.).</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="w-full px-4 pb-24 bg-brand-navy text-center relative overflow-hidden">
+      <div class="max-w-7xl mx-auto relative z-10">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+          Tu tranquilidad financiera<span class="text-green-500 block">tiene una salida legal.</span>
         </h2>
-        <NuxtLink to="/evaluacion"
-          class="inline-flex justify-center items-center gap-2 px-12 py-5 bg-green-500 hover:bg-brand-light hover:text-brand-dark text-white font-bold rounded-xl transition-all shadow-[0_0_40px_rgba(58,90,64,0.4)] hover:shadow-[0_0_60px_rgba(58,90,64,0.6)] text-xl hover:scale-105 hover:-translate-y-1 duration-300 uppercase tracking-wide">
-          Comenzar mi evaluación gratuita
+        <p class="text-brand-light/70 text-lg pt-2 pb-4">¿Cumples con estas condiciones y deseas eliminar tus deudas para siempre?</p>
+         <NuxtLink to="/evaluacion"
+          class="inline-flex justify-center items-center gap-2 px-10 py-5 bg-brand-light hover:bg-brand-green hover:text-brand-light text-brand-dark font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-xl hover:scale-105 hover:-translate-y-1 duration-300 animate-slide-up uppercase tracking-wide"
+          style="animation-delay: 0.4s">
+          Evaluar mi caso ahora
           <ArrowRight class="w-6 h-6" />
         </NuxtLink>
       </div>

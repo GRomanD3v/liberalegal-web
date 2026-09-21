@@ -530,7 +530,13 @@ const validateAndSubmit = async () => {
   isSubmitting.value = true
   submitError.value = ''
 
-  // Conversión Google Ads — se dispara justo antes del envío, cuando el lead ya validó sus datos.
+  try {
+    await $fetch('/api/evaluacion', {
+      method: 'POST',
+      body: buildPayload()
+    })
+
+    // Conversión Google Ads — se dispara justo antes del envío, cuando el lead ya validó sus datos.
   if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
     window.gtag('event', 'conversion', {
       'send_to': 'AW-18195127031/j3mGCOyekbUcEPe1juRD',
@@ -538,12 +544,14 @@ const validateAndSubmit = async () => {
       'currency': 'CLP'
     })
   }
-
-  try {
-    await $fetch('/api/evaluacion', {
-      method: 'POST',
-      body: buildPayload()
+  // Enviamos el evento Lead y aprovechamos tu computed property para darle más contexto al algoritmo
+  if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+    window.fbq('track', 'Lead', {
+      content_category: leadScore.value, 
+      value: 1.0,
+      currency: 'CLP'
     })
+  }
     isSubmitted.value = true
     setTimeout(() => {
       document.getElementById('seccion-informe')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
