@@ -50,25 +50,24 @@
       </div>
     </section>
     <!-- Antes de responder el test -->
-    <section class="w-full pb-20 px-4 bg-brand-navy relative">
+    <section class="w-full pb-10 px-4 bg-brand-navy relative">
       <div class="max-w-7xl mx-auto">
-        <div class="mb-16 text-center">
-          <p class="text-brand-green font-medium text-2xl pb-2">Lee esta información importante</p>
-          <h2 class="text-2xl md:text-4xl font-bold text-brand-light tracking-wide pb-2">Antes de responder nuestro test</h2>
-          <p class="text-brand-light/70 text-lg pt-2 max-w-4xl mx-auto">Queremos cuidar tu tiempo y ayudarte con total transparencia. Este rápido cuestionario de 3 minuto analizará tu situación financiera para verificar si cumples con las condiciones que exige la Ley 20.720 (Ley de Insolvencia).
-​Al completarlo, sabrás de inmediato si tu caso es viable y evitarás perder tiempo en reuniones o asesorías con abogados si tu perfil no califica.
-​Para que este proceso sea exitoso y definitivo, debes tener presentes dos reglas fundamentales:
-</p>
+        <div class="mb-16 border border-white/30 bg-green-300/10 mx-auto py-10 px-10 rounded-2xl text-center">
+          <p class="text-brand-green uppercase tracking-wider border inline-block bg-brand-green/10 border-green-500 rounded-3xl py-2 px-6 mb-4 text-base">Lee esta información importante</p>
+          <h2 class="text-center text-2xl md:text-4xl font-bold text-brand-light tracking-wide pb-2">Antes de responder nuestro test</h2>
+          <p class="text-justify text-brand-light/70 text-lg pt-2 max-w-4xl mx-auto">Queremos cuidar tu tiempo y ayudarte con total transparencia. Este rápido cuestionario de 3 minuto analizará tu situación financiera para verificar si cumples con las condiciones que exige la Ley 20.720 (Ley de Insolvencia).
+            Al completarlo, sabrás de inmediato si tu caso es viable y evitarás perder tiempo en reuniones o asesorías con abogados si tu perfil no califica.
+            Para que este proceso sea exitoso y definitivo, debes tener presentes dos reglas fundamentales:</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="border bg-brand-light border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green">Regla 1:</span> Estar en verdadero estado de insolvencia</h3>
+            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green text-2xl">Regla 1:</span> Estar en verdadero estado de insolvencia</h3>
             <p class="text-brand-dark font-medium">Para acogerse a este procedimiento legal, no basta con tener deudas; <span class="font-bold">es necesario estar en estado de insolvencia.</span></p>
             <p class="text-brand-dark font-medium pt-4"><span class="font-bold">¿Qué significa estar en insolvencia?</span> Significa que tus ingresos actuales no te permiten cubrir tus gastos básicos de vida y, al mismo tiempo, pagar las cuotas de tus deudas. Es decir, cuando tu presupuesto mensual colapsó y te resulta técnicamente imposible cumplir con tus compromisos financieros.</p>
           </div>
           <div class="border bg-brand-light border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green">Regla 2:</span> Disposición a entregar tu patrimonio para eliminar tus deudas</h3>
+            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green text-2xl">Regla 2:</span> Disposición a entregar tu patrimonio para eliminar tus deudas</h3>
             <span class="font-bold text-brand-dark">*Si tienes bienes o derechos a tu nombre (casas, departamentos, vehículos, terrenos, derechos hereditarios, participación en sociedades, etc.):</span>
             <p class="text-brand-dark font-medium pt-4">Debes estar dispuesto/a a que estos activos sean entregados y liquidados dentro del proceso legal para saldar las deudas. Si tienes de alto valor que no deseas perder, este procedimiento no es la alternativa adecuada para ti.</p>
             <span class="text-brand-dark font-medium pt-4 block"><span class="font-bold">*Si NO tienes bienes inmuebles ni vehículos a tu nombre: </span>¡También puedes acogerte! La ley permite liquidar y eliminar la totalidad de tus deudas entregando bienes muebles básicos y enseres de tu hogar (como por ejemplo: un televisor, una lavadora, una cafetera, un juego de comedor, etc.).</span>
@@ -79,21 +78,22 @@
     </section>
 
     <!-- Bottom CTA -->
-    <section class="w-full pt-10 pb-24 bg-brand-navy text-center relative overflow-hidden">
+    <section class="w-full py-2 pb-24 bg-brand-navy text-center relative overflow-hidden">
       <div class="max-w-7xl mx-auto relative z-10">
         <!-- <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
           Tu tranquilidad financiera<span class="text-green-500 block">tiene una salida legal.</span>
         </h2> -->
-        <h2 class="max-w-2xl mx-auto text-2xl font-bold mb-10 text-brand-green">¿Cumples con estas condiciones y deseas eliminar tus deudas para siempre?</h2>
+        <p class="max-w-4xl mx-auto text-brand-light/60 text-lg font-medium animate-slide-up" style="animation-delay: 0.5s">
+          Si comprendes estas dos reglas y estás listo/a para dar el paso hacia tu tranquilidad financiera, responde las siguientes preguntas a continuación para evaluar tu caso de inmediato.
+        </p>
+        <br>
          <NuxtLink to="/evaluacion"
-          class="inline-flex justify-center items-center gap-2 px-10 py-5 bg-brand-light hover:bg-brand-green hover:text-brand-light text-brand-dark font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-xl hover:scale-105 hover:-translate-y-1 duration-300 animate-slide-up uppercase tracking-wide"
+          class="inline-flex justify-center items-center gap-2 px-10 py-5 bg-brand-green hover:bg-brand-green hover:text-brand-light text-brand-light font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-xl hover:scale-105 hover:-translate-y-1 duration-300 animate-slide-up uppercase tracking-wide"
           style="animation-delay: 0.4s">
           Evaluar mi caso ahora
           <ArrowRight class="w-6 h-6" />
         </NuxtLink>
-        <p class="max-w-2xl mx-auto text-brand-light/60 pt-10 text-sm font-medium animate-slide-up" style="animation-delay: 0.5s">
-          Si comprendes estas dos reglas y estás listo/a para dar el paso hacia tu tranquilidad financiera, responde las siguientes preguntas a continuación para evaluar tu caso de inmediato.
-</p>
+        
       </div>
     </section>
 
@@ -136,7 +136,7 @@
     </section> -->
 
     <!-- Cómo Funciona -->
-    <section class="w-full py-24 px-4 bg-brand-navy relative overflow-hidden text-white">
+    <section class="w-full py-24 px-4 bg-brand-light relative overflow-hidden text-brand-navy">
       <div class="absolute inset-0 z-0"></div>
 
       <div class="max-w-6xl mx-auto relative z-10">
@@ -150,32 +150,32 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
           <!-- Paso 1 -->
           <div
-            class="bg-white/5 border border-white/10 rounded-2xl px-2 py-8 flex flex-col items-center text-center hover:bg-white/10 transition-colors">
+            class="bg-brand-navy/5 border border-brand-green/10 rounded-2xl px-6 py-8 flex flex-col items-center text-center hover:bg-brand-navy/10 transition-colors">
             <div
-              class="w-14 h-14 bg-green-500/90 text-white rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
+              class="w-14 h-14 bg-brand-green/90 text-white rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
               1</div>
             <h3 class="text-2xl font-semibold mb-4">Responde 7 preguntas</h3>
-            <p class="text-gray-300 font-light text-lg leading-relaxed">Sin RUT ni datos bancarios. Solo tu situación
+            <p class="text-brand-navy font-light text-lg leading-relaxed">Sin RUT ni datos bancarios. Solo tu situación
               financiera básica para evaluar tu caso.</p>
           </div>
           <!-- Paso 2 -->
           <div
-            class="bg-white/5 border border-white/10 rounded-2xl px-2 py-8 flex flex-col items-center text-center hover:bg-white/10 transition-colors">
+            class="bg-brand-navy/5 border border-brand-green/10 rounded-2xl px-6 py-8 flex flex-col items-center text-center hover:bg-brand-navy/10 transition-colors">
             <div
               class="w-14 h-14 bg-green-500/90 text-white rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
               2</div>
             <h3 class="text-2xl font-bold mb-4">Recibimos tus respuestas</h3>
-            <p class="text-gray-300 font-light text-lg leading-relaxed">Nuestro equipo jurídico revisa personalmente tu caso y prepara tu informe de factibilidad.
+            <p class="text-brand-navy font-light text-lg leading-relaxed">Nuestro equipo jurídico revisa personalmente tu caso y prepara tu informe de factibilidad.
               Lo recibirás en un plazo máximo de 24 horas.</p>
           </div>
           <!-- Paso 3 -->
           <div
-            class="bg-white/5 border border-white/10 rounded-2xl px-8 py-8 flex flex-col items-center text-center hover:bg-white/10 transition-colors">
+            class="bg-brand-navy/5 border border-brand-green/10 rounded-2xl px-6 py-8 flex flex-col items-center text-center hover:bg-brand-navy/10 transition-colors">
             <div
               class="w-14 h-14 bg-green-500/90 text-white rounded-full flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
               3</div>
             <h3 class="text-2xl font-bold mb-4">Habla con un abogado</h3>
-            <p class="text-gray-300 font-light text-lg leading-relaxed">Te contactamos en máximo 48 hrs para revisar tu
+            <p class="text-brand-navy font-light text-lg leading-relaxed">Te contactamos en máximo 48 hrs para revisar tu
               informe y explicar tus opciones reales sin costo.</p>
           </div>
         </div>
