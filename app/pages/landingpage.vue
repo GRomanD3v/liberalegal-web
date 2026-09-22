@@ -33,7 +33,7 @@
         </p>
 
         <!-- Pills / Etiquetas -->
-        <div class="flex flex-wrap justify-center gap-3 mb-10 animate-slide-up" style="animation-delay: 0.3s">
+        <div class="flex flex-wrap justify-center gap-3 animate-slide-up" style="animation-delay: 0.3s">
           <span
             class="bg-green-500/10 border border-green-500/20 text-white rounded-full px-5 py-2 font-semibold text-sm backdrop-blur-sm">✓
             Sin costo</span>
@@ -47,15 +47,53 @@
             class="bg-green-500/10 border border-green-500/20 text-white rounded-full px-5 py-2 font-semibold text-sm backdrop-blur-sm">✓
             Sin datos bancarios/Sin RUT</span>
         </div>
+      </div>
+    </section>
+    <!-- Antes de responder el test -->
+    <section class="w-full pb-20 px-4 bg-brand-navy relative">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16 text-center">
+          <p class="text-brand-green font-medium text-2xl pb-2">Lee esta información importante</p>
+          <h2 class="text-2xl md:text-4xl font-bold text-brand-light tracking-wide pb-2">Antes de responder nuestro test</h2>
+          <p class="text-brand-light/70 text-lg pt-2 max-w-4xl mx-auto">Queremos cuidar tu tiempo y ayudarte con total transparencia. Este rápido cuestionario de 3 minuto analizará tu situación financiera para verificar si cumples con las condiciones que exige la Ley 20.720 (Ley de Insolvencia).
+​Al completarlo, sabrás de inmediato si tu caso es viable y evitarás perder tiempo en reuniones o asesorías con abogados si tu perfil no califica.
+​Para que este proceso sea exitoso y definitivo, debes tener presentes dos reglas fundamentales:
+</p>
+        </div>
 
-        <NuxtLink to="/evaluacion"
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="border bg-brand-light border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
+            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green">Regla 1:</span> Estar en verdadero estado de insolvencia</h3>
+            <p class="text-brand-dark font-medium">Para acogerse a este procedimiento legal, no basta con tener deudas; <span class="font-bold">es necesario estar en estado de insolvencia.</span></p>
+            <p class="text-brand-dark font-medium pt-4"><span class="font-bold">¿Qué significa estar en insolvencia?</span> Significa que tus ingresos actuales no te permiten cubrir tus gastos básicos de vida y, al mismo tiempo, pagar las cuotas de tus deudas. Es decir, cuando tu presupuesto mensual colapsó y te resulta técnicamente imposible cumplir con tus compromisos financieros.</p>
+          </div>
+          <div class="border bg-brand-light border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
+            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green">Regla 2:</span> Disposición a entregar tu patrimonio para eliminar tus deudas</h3>
+            <span class="font-bold text-brand-dark">*Si tienes bienes o derechos a tu nombre (casas, departamentos, vehículos, terrenos, derechos hereditarios, participación en sociedades, etc.):</span>
+            <p class="text-brand-dark font-medium pt-4">Debes estar dispuesto/a a que estos activos sean entregados y liquidados dentro del proceso legal para saldar las deudas. Si tienes de alto valor que no deseas perder, este procedimiento no es la alternativa adecuada para ti.</p>
+            <span class="text-brand-dark font-medium pt-4 block"><span class="font-bold">*Si NO tienes bienes inmuebles ni vehículos a tu nombre: </span>¡También puedes acogerte! La ley permite liquidar y eliminar la totalidad de tus deudas entregando bienes muebles básicos y enseres de tu hogar (como por ejemplo: un televisor, una lavadora, una cafetera, un juego de comedor, etc.).</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="w-full pt-10 pb-24 bg-brand-navy text-center relative overflow-hidden">
+      <div class="max-w-7xl mx-auto relative z-10">
+        <!-- <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+          Tu tranquilidad financiera<span class="text-green-500 block">tiene una salida legal.</span>
+        </h2> -->
+        <h2 class="max-w-2xl mx-auto text-2xl font-bold mb-10 text-brand-green">¿Cumples con estas condiciones y deseas eliminar tus deudas para siempre?</h2>
+         <NuxtLink to="/evaluacion"
           class="inline-flex justify-center items-center gap-2 px-10 py-5 bg-brand-light hover:bg-brand-green hover:text-brand-light text-brand-dark font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-xl hover:scale-105 hover:-translate-y-1 duration-300 animate-slide-up uppercase tracking-wide"
           style="animation-delay: 0.4s">
           Evaluar mi caso ahora
           <ArrowRight class="w-6 h-6" />
         </NuxtLink>
-        <p class="text-brand-light/60 mt-4 text-sm font-medium animate-slide-up" style="animation-delay: 0.5s">Informe
-          personalizado - revisión experta en 24 horas</p>
+        <p class="max-w-2xl mx-auto text-brand-light/60 pt-10 text-sm font-medium animate-slide-up" style="animation-delay: 0.5s">
+          Si comprendes estas dos reglas y estás listo/a para dar el paso hacia tu tranquilidad financiera, responde las siguientes preguntas a continuación para evaluar tu caso de inmediato.
+</p>
       </div>
     </section>
 
@@ -77,7 +115,7 @@
       </div>
     </section>
 
-    <!-- Urgencia -->
+    <!-- Urgencia
     <section class="w-full bg-brand-light py-8 px-4">
       <div class="max-w-5xl mx-auto py-20 md:py-20 text-center">
         <div
@@ -91,16 +129,15 @@
           La Ley de Insolvencia y Reemprendimiento permite a personas naturales iniciar un proceso legal para renegociar
           o eliminar deudas.
         </p>
-        <div
-          class="inline-block text-brand-navy px-8 py-3 font-bold text-2xl">
+        <div class="inline-block text-brand-navy px-8 py-3 font-bold text-2xl">
           Muchas personas no saben que califican.
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Cómo Funciona -->
     <section class="w-full py-24 px-4 bg-brand-navy relative overflow-hidden text-white">
-      <div class="absolute inset-0 z-0 bg-gradient-to-t from-brand-green/20 to-transparent"></div>
+      <div class="absolute inset-0 z-0"></div>
 
       <div class="max-w-6xl mx-auto relative z-10">
         <div class="mb-20 text-center">
@@ -239,48 +276,6 @@
               de tu hogar.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Antes de responder el test -->
-    <section class="w-full py-24 px-4 bg-brand-navy relative">
-      <div class="max-w-7xl mx-auto">
-        <div class="mb-16 text-center">
-          <p class="text-brand-green font-medium text-2xl pb-2">Lee esta información importante</p>
-          <h2 class="text-2xl md:text-4xl font-bold text-brand-light tracking-wide pb-2">Antes de responder nuestro test</h2>
-          <p class="text-brand-light/70 text-lg pt-2 max-w-4xl mx-auto">Queremos cuidar tu tiempo y ayudarte con total transparencia. Este rápido cuestionario de 1 minuto analizará tu situación financiera para verificar si cumples con las condiciones que exige la Ley 20.720 (Ley de Insolvencia). Al completarlo, sabrás de inmediato si tu caso es viable y evitarás perder tiempo en reuniones o asesorías con abogados si tu perfil no califica.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="border bg-brand-light border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green">Regla 1:</span> Estar en verdadero estado de insolvencia</h3>
-            <p class="text-brand-dark font-medium">Para acogerse a este procedimiento legal, no basta con tener deudas; <span class="font-bold">es necesario estar en estado de insolvencia.</span></p>
-            <p class="text-brand-dark font-medium pt-4"><span class="font-bold">¿Qué significa estar en insolvencia?</span> Significa que tus ingresos actuales no te permiten cubrir tus gastos básicos de vida y, al mismo tiempo, pagar las cuotas de tus deudas. Es decir, cuando tu presupuesto mensual colapsó y te resulta técnicamente imposible cumplir con tus compromisos financieros.</p>
-          </div>
-          <div class="border bg-brand-light border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green">Regla 2:</span> Disposición a entregar tu patrimonio para eliminar tus deudas</h3>
-            <span class="font-bold text-brand-dark">*Si tienes bienes o derechos a tu nombre (casas, departamentos, vehículos, terrenos, derechos hereditarios, participación en sociedades, etc.):</span>
-            <p class="text-brand-dark font-medium pt-4">Debes estar dispuesto/a a que estos activos sean entregados y liquidados dentro del proceso legal para saldar las deudas. Si tienes de alto valor que no deseas perder, este procedimiento no es la alternativa adecuada para ti.</p>
-            <span class="text-brand-dark font-medium pt-4 block"><span class="font-bold">*Si NO tienes bienes inmuebles ni vehículos a tu nombre: </span>¡También puedes acogerte! La ley permite liquidar y eliminar la totalidad de tus deudas entregando bienes muebles básicos y enseres de tu hogar (como por ejemplo: un televisor, una lavadora, una cafetera, un juego de comedor, etc.).</span>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="w-full px-4 pb-24 bg-brand-navy text-center relative overflow-hidden">
-      <div class="max-w-7xl mx-auto relative z-10">
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-          Tu tranquilidad financiera<span class="text-green-500 block">tiene una salida legal.</span>
-        </h2>
-        <p class="text-brand-light/70 text-lg pt-2 pb-4">¿Cumples con estas condiciones y deseas eliminar tus deudas para siempre?</p>
-         <NuxtLink to="/evaluacion"
-          class="inline-flex justify-center items-center gap-2 px-10 py-5 bg-brand-light hover:bg-brand-green hover:text-brand-light text-brand-dark font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-xl hover:scale-105 hover:-translate-y-1 duration-300 animate-slide-up uppercase tracking-wide"
-          style="animation-delay: 0.4s">
-          Evaluar mi caso ahora
-          <ArrowRight class="w-6 h-6" />
-        </NuxtLink>
       </div>
     </section>
 
