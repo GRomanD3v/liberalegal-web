@@ -59,15 +59,15 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 mx-auto bg-brand-light rounded-2xl sm:p-10 hover:shadow-md transition-shadow">
-          <div class="border-b border-brand-navy/20 pb-8">
-            <h3 class="text-2xl font-bold mb-3 text-brand-green">¿Estás en insolvencia?</h3>
+          <div class="py-8 px-4 sm:px-4 sm:py-8 text-justify border-b border-brand-navy/20 pb-8">
+            <h3 class="text-xl sm:text-2xl font-bold mb-3 text-brand-green">¿Estás en insolvencia?</h3>
             <p class="text-brand-dark font-light">No basta con tener deudas para estar en insolvencia. Se trata de que tus ingresos actuales 
               ya no alcanzan para cubrir tus gastos básicos y, al mismo tiempo, cumplir tus obligaciones financieras. En nuestra experiencia 
               representando este tipo de casos, cuando más del 60% del ingreso mensual se destina al pago de deudas, la persona ya está en 
               esta situación, aunque logre "ir cumpliendo" mes a mes.</p>
           </div>
-          <div class="pt-8">
-            <h3 class="text-2xl font-bold mb-3 text-brand-green">¿Estás dispuesto/a a entregar tus bienes?</h3>
+          <div class="py-8 px-4 sm:px-4 sm:py-8 text-justify">
+            <h3 class="text-xl sm:text-2xl font-bold mb-3 text-brand-green">¿Estás dispuesto/a a entregar tus bienes?</h3>
             <span class="font-light text-brand-dark">El apego a lo propio es natural, y muchas personas dudan por eso. 
               Si tienes bienes inscritos a tu nombre —vivienda, vehículos, derechos hereditarios— debes saber que estos 
               también forman parte de lo que se liquidaría dentro del proceso, no solo el menaje del hogar. Si no tienes 
