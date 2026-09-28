@@ -2,7 +2,7 @@
   <div class="bg-brand-light min-h-screen">
 
     <!-- Hero Section (Corporate Style) -->
-    <section class="relative w-full pt-32 pb-20 md:pt-40 md:pb-32 flex items-center bg-brand-navy overflow-hidden">
+    <section class="relative w-full pt-2 pb-2 md:pt-24 md:pb-4 flex items-center bg-brand-navy overflow-hidden">
       <!-- Imagen de fondo -->
       <div class="absolute inset-0 z-0">
         <img src="/hero-img.jpg" alt="LIBERA Legal" class="w-full h-full object-cover object-center opacity-40" />
@@ -50,27 +50,30 @@
       </div>
     </section>
     <!-- Antes de responder el test -->
-    <section class="w-full pb-10 px-4 sm:px-6 lg:px-8 bg-brand-navy relative">
+    <section class="w-full pt-2 px-4 sm:px-4 lg:px-6 bg-brand-navy relative">
       <div class="max-w-7xl mx-auto">
-        <div class="mb-12 sm:mb-16 border border-white/30 bg-green-300/10 mx-auto py-8 px-5 sm:py-10 sm:px-10 rounded-2xl text-center">
-          <p class="text-brand-green uppercase tracking-wider border inline-block bg-brand-green/10 border-green-500 rounded-3xl py-2 px-4 sm:px-6 mb-4 text-xs sm:text-base font-semibold">Lee esta información importante</p>
-          <h2 class="text-center text-2xl md:text-4xl font-bold text-brand-light tracking-wide pb-2">Antes de responder nuestro test</h2>
-          <p class="text-left sm:text-justify text-brand-light/70 text-base sm:text-lg pt-2 max-w-4xl mx-auto leading-relaxed">Queremos cuidar tu tiempo y ayudarte con total transparencia. Este rápido cuestionario de 3 minutos analizará tu situación financiera para verificar si cumples con las condiciones que exige la Ley 20.720 (Ley de Insolvencia).
-            Al completarlo, sabrás de inmediato si tu caso es viable y evitarás perder tiempo en reuniones o asesorías con abogados si tu perfil no califica.
-            Para que este proceso sea exitoso y definitivo, debes tener presentes dos reglas fundamentales:</p>
+        <div class="mb-2 sm:mb-4 mx-auto py-4 px-5 sm:py-8 sm:px-8 rounded-2xl text-center">
+          <p class="text-brand-green uppercase tracking-wider border inline-block bg-green-500/10 border-green-500 rounded-3xl py-2 px-4 sm:px-6 mb-4 text-xs sm:text-base font-semibold">Antes de comenzar</p>
+          <h2 class="text-center text-2xl md:text-4xl font-bold text-brand-light tracking-wide pb-2">Confirma si tu situación corresponde a este procedimiento</h2>
+          <p class="text-center text-brand-light/70 text-md sm:text-lg pt-2 max-w-4xl mx-auto leading-relaxed">No te pedimos ningún dato — solo que verifiques estos dos puntos antes de comenzar.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-          <div class="border bg-brand-light border-gray-100 rounded-2xl p-6 sm:p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green text-2xl">Regla 1:</span> Estar en verdadero estado de insolvencia</h3>
-            <p class="text-brand-dark font-medium">Para acogerse a este procedimiento legal, no basta con tener deudas; <span class="font-bold">es necesario estar en estado de insolvencia.</span></p>
-            <p class="text-brand-dark font-medium pt-4"><span class="font-bold">¿Qué significa estar en insolvencia?</span> Significa que tus ingresos actuales no te permiten cubrir tus gastos básicos de vida y, al mismo tiempo, pagar las cuotas de tus deudas. Es decir, cuando tu presupuesto mensual colapsó y te resulta técnicamente imposible cumplir con tus compromisos financieros.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 mx-auto bg-brand-light rounded-2xl sm:p-10 hover:shadow-md transition-shadow">
+          <div class="border-b border-brand-navy/20 pb-8">
+            <h3 class="text-2xl font-bold mb-3 text-brand-green">¿Estás en insolvencia?</h3>
+            <p class="text-brand-dark font-light">No basta con tener deudas para estar en insolvencia. Se trata de que tus ingresos actuales 
+              ya no alcanzan para cubrir tus gastos básicos y, al mismo tiempo, cumplir tus obligaciones financieras. En nuestra experiencia 
+              representando este tipo de casos, cuando más del 60% del ingreso mensual se destina al pago de deudas, la persona ya está en 
+              esta situación, aunque logre "ir cumpliendo" mes a mes.</p>
           </div>
-          <div class="border bg-brand-light border-gray-100 rounded-2xl p-6 sm:p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark"> <span class="text-brand-green text-2xl">Regla 2:</span> Disposición a entregar tu patrimonio para eliminar tus deudas</h3>
-            <span class="font-bold text-brand-dark">*Si tienes bienes o derechos a tu nombre (casas, departamentos, vehículos, terrenos, derechos hereditarios, participación en sociedades, etc.):</span>
-            <p class="text-brand-dark font-medium pt-4">Debes estar dispuesto/a a que estos activos sean entregados y liquidados dentro del proceso legal para saldar las deudas. Si tienes de alto valor que no deseas perder, este procedimiento no es la alternativa adecuada para ti.</p>
-            <span class="text-brand-dark font-medium pt-4 block"><span class="font-bold">*Si NO tienes bienes inmuebles ni vehículos a tu nombre: </span>¡También puedes acogerte! La ley permite liquidar y eliminar la totalidad de tus deudas entregando bienes muebles básicos y enseres de tu hogar (como por ejemplo: un televisor, una lavadora, una cafetera, un juego de comedor, etc.).</span>
+          <div class="pt-8">
+            <h3 class="text-2xl font-bold mb-3 text-brand-green">¿Estás dispuesto/a a entregar tus bienes?</h3>
+            <span class="font-light text-brand-dark">El apego a lo propio es natural, y muchas personas dudan por eso. 
+              Si tienes bienes inscritos a tu nombre —vivienda, vehículos, derechos hereditarios— debes saber que estos 
+              también forman parte de lo que se liquidaría dentro del proceso, no solo el menaje del hogar. Si no tienes 
+              bienes inscritos, en la práctica entregar bienes de menor valor (electrodomésticos, muebles, enseres del hogar) 
+              suele bastar para extinguir deudas mucho mayores. Hemos visto casos de un menaje básico eliminando una deuda de 
+              $20.000.000.</span>
           </div>
 
         </div>
@@ -83,9 +86,8 @@
         <!-- <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
           Tu tranquilidad financiera<span class="text-green-500 block">tiene una salida legal.</span>
         </h2> -->
-        <p class="text-brand-light/70 text-base sm:text-lg font-medium leading-relaxed mb-8 max-w-3xl animate-slide-up" style="animation-delay: 0.5s">
-          Si comprendes estas dos reglas y estás listo/a para dar el paso hacia tu tranquilidad financiera, responde las siguientes preguntas a continuación para evaluar tu caso de inmediato.
-        </p>
+        <p class="text-brand-light/70 text-base sm:text-lg leading-relaxed mb-8 max-w-3xl animate-slide-up" style="animation-delay: 0.5s">
+          Si ambas preguntas te representan, este puede ser tu camino. Si no, aún no es tu momento.</p>
         
         <NuxtLink to="/evaluacion"
           class="w-full sm:w-auto inline-flex justify-center items-center gap-3 px-6 sm:px-10 py-4 sm:py-5 bg-brand-green hover:bg-brand-green/90 text-brand-light font-bold rounded-xl transition-all shadow-xl hover:shadow-brand-green/30 text-lg sm:text-xl hover:scale-105 hover:-translate-y-1 duration-300 animate-slide-up uppercase tracking-wide"
@@ -239,50 +241,62 @@
     </section>
 
     <!-- Preguntas Frecuentes -->
-    <section class="w-full py-24 px-4 bg-white relative">
-      <div class="max-w-7xl mx-auto">
-        <div class="mb-16 text-center">
-          <span class="text-brand-green font-bold uppercase tracking-widest text-sm mb-4 block">Preguntas
-            frecuentes</span>
-          <h2 class="text-4xl md:text-5xl font-bold text-brand-dark tracking-tight">Lo que más nos preguntan antes de
-            empezar</h2>
-        </div>
+   <!-- Preguntas Frecuentes -->
+<section class="w-full py-24 px-4 bg-white relative">
+  <div class="max-w-4xl mx-auto"> <!-- Cambié max-w-7xl a max-w-4xl para que el acordeón no quede demasiado ancho -->
+    <div class="mb-16 text-center">
+      <span class="text-brand-green font-bold uppercase tracking-widest text-sm mb-4 block">Preguntas frecuentes</span>
+      <h2 class="text-4xl md:text-5xl font-bold text-brand-dark tracking-tight">Lo que más nos preguntan antes de empezar</h2>
+    </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-brand-navy/10 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Esto me obliga a contratar?</h3>
-            <p class="text-gray-600 font-medium">No. La evaluación es gratuita y sin compromiso. Decides tú si continuar
-              con el proceso.</p>
+    <!-- Contenedor del Acordeón -->
+    <div class="space-y-4">
+      <div 
+        v-for="(faq, index) in faqs" 
+        :key="index"
+        class="bg-brand-navy/10 border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-md"
+      >
+        <!-- Botón del Acordeón -->
+        <button 
+          @click="toggleFaq(index)"
+          class="w-full p-6 sm:p-8 text-left flex justify-between items-center focus:outline-none"
+        >
+          <h3 class="text-xl font-bold text-brand-dark pr-6">{{ faq.pregunta }}</h3>
+          
+          <!-- Ícono que gira cuando está abierto -->
+          <ChevronDown 
+            class="w-6 h-6 text-brand-green flex-shrink-0 transition-transform duration-300"
+            :class="{ 'rotate-180': faqAbierta === index }"
+          />
+        </button>
+        
+        <!-- Contenido desplegable con transición nativa de Vue -->
+        <transition 
+          enter-active-class="transition-[grid-template-rows] duration-300 ease-out"
+          leave-active-class="transition-[grid-template-rows] duration-300 ease-in"
+          enter-from-class="grid-rows-[0]"
+          enter-to-class="grid-rows-[1fr]"
+          leave-from-class="grid-rows-[1fr]"
+          leave-to-class="grid-rows-[0]"
+        >
+          <div v-show="faqAbierta === index" class="grid">
+            <div class="overflow-hidden">
+              <p class="text-gray-600 font-medium px-6 sm:px-8 pb-6 sm:pb-8 pt-0" v-html="faq.respuesta"></p>
+            </div>
           </div>
-          <div class="bg-brand-navy/10 Border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Por qué el informe tarda hasta 24 horas y no es
-              inmediato?</h3>
-            <p class="text-gray-600 font-medium">Porque no creemos en soluciones masivas de software. Cada situación
-              financiera en Chile es única. Para garantizarte opciones reales y un documento técnico-judicial con
-              validez, un miembro de nuestro equipo legal revisa personalmente tus respuestas antes de emitir el informe
-              con el membrete de Libera Legal.</p>
-          </div>
-          <div class="bg-brand-navy/10 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Mis datos están seguros?</h3>
-            <p class="text-gray-600 font-medium">Tu información es confidencial y solo la usa el estudio para
-              contactarte directamente.</p>
-          </div>
-          <div class="bg-brand-navy/10 border border-gray-100 rounded-2xl p-8 hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-3 text-brand-dark">¿Atienden a personas de regiones fuera de Santiago?</h3>
-            <p class="text-gray-600 font-medium">Sí, absolutamente. Libera Legal cuenta con cobertura nacional. Gracias
-              a la digitalización de los Tribunales de Justicia y de la Tesorería General de la República (TGR), podemos
-              tramitar y defender tu caso en cualquier región de Chile de forma 100% online y sin que tengas que salir
-              de tu hogar.</p>
-          </div>
-        </div>
+        </transition>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
   </div>
 </template>
 
 <script setup>
-import { CheckCircle, AlertCircle, CheckCircle2, FileText, ArrowRight } from 'lucide-vue-next'
+import { ref } from 'vue'
+// Añade ChevronDown o similar a tus importaciones de Lucide
+import { CheckCircle, AlertCircle, CheckCircle2, FileText, ArrowRight, ChevronDown } from 'lucide-vue-next'
 
 definePageMeta({
   layout: 'captacion'
@@ -294,4 +308,59 @@ useHead({
     { name: 'description', content: 'Descubre si calificas para la eliminación o renegociación de deudas bajo la Ley 20.720 en 2 minutos.' }
   ]
 })
+
+// Estado para controlar qué pregunta está abierta
+const faqAbierta = ref(null)
+
+const toggleFaq = (index) => {
+  faqAbierta.value = faqAbierta.value === index ? null : index
+}
+
+// Array con la información que tenías hardcodeada en el HTML
+const faqs = [
+  {
+    pregunta: '¿Esto me obliga a contratar?',
+    respuesta: 'No. La evaluación es gratuita y sin compromiso. Decides tú si continuar con el proceso.'
+  },
+  {
+    pregunta: '¿Por qué el informe tarda hasta 24 horas y no es inmediato?',
+    respuesta: 'Porque no creemos en soluciones masivas de software. Cada situación financiera en Chile es única. Para garantizarte opciones reales y un documento técnico-judicial con validez, un miembro de nuestro equipo legal revisa personalmente tus respuestas antes de emitir el informe con el membrete de Libera Legal.'
+  },
+  {
+    pregunta: '¿Mis datos están seguros?',
+    respuesta: 'Tu información es confidencial y solo la usa el estudio para contactarte directamente.'
+  },
+  {
+    pregunta: '¿Atienden a personas de regiones fuera de Santiago?',
+    respuesta: 'Sí, absolutamente. Libera Legal cuenta con cobertura nacional. Gracias a la digitalización de los Tribunales de Justicia y de la Tesorería General de la República (TGR), podemos tramitar y defender tu caso en cualquier región de Chile de forma 100% online y sin que tengas que salir de tu hogar.'
+  },
+  {
+    pregunta: '¿Me pueden meter preso por no pagar mis deudas?',
+    respuesta: 'No. En Chile la prohibición de prisión por deudas tiene rango constitucional: está consagrada en el artículo 7, inciso 7° del Pacto de San José de Costa Rica (Convención Americana de Derechos Humanos), ratificado por Chile. Nadie va preso por no pagar una deuda comercial o de consumo.<br><br>Las excepciones que existen no sancionan la deuda en sí, sino otra conducta: el giro doloso de cheques (delito por el uso fraudulento de un instrumento bancario), el no pago de pensión de alimentos (por el interés superior del niño), y la apropiación indebida de cotizaciones previsionales retenidas por el empleador y no pagadas (por la protección de los derechos previsionales de los trabajadores).'
+  },
+  {
+    pregunta: '¿Qué pasa con las cosas indispensables de mi casa?',
+    respuesta: 'La ley protege los utensilios de cocina y los alimentos necesarios para el consumo de tu familia durante un mes — eso nunca se liquida. Lo que sí puede formar parte del proceso son electrodomésticos prescindibles, como un televisor, una cafetera o una freidora de aire, que en la práctica suelen bastar para extinguir deudas mucho mayores.'
+  },
+  {
+    pregunta: '¿Qué pasa si ya tengo una demanda o un embargo en curso?',
+    respuesta: 'Al ingresar tu solicitud de liquidación, se suspenden las acciones individuales de tus acreedores en tu contra — incluidos los embargos y juicios ejecutivos ya iniciados. No es que la deuda desaparezca de inmediato, pero las gestiones de cobro en tu contra se detienen mientras el procedimiento avanza.'
+  },
+  {
+    pregunta: '¿Me pueden embargar mi sueldo?',
+    respuesta: 'Tu remuneración está protegida hasta 56 UF (aprox. $2.300.000 a la fecha) — esa parte nunca es embargable. Sobre ese monto, el artículo 276 de la Ley 20.720 permite retener el excedente, pero solo por un máximo de tres meses consecutivos, no de forma indefinida. Y si ya tienes un embargo de sueldo vigente por una demanda, al ingresar tu solicitud de liquidación ese embargo queda suspendido junto con las demás acciones de tus acreedores.'
+  },
+  {
+    pregunta: '¿Me siguen descontando el crédito de mi sueldo si tengo descuento por planilla?',
+    respuesta: 'No. Una vez que la resolución que admite a trámite tu liquidación se publica en el Boletín Concursal, la entidad que te hace el descuento queda obligada a detenerlo. Desde ese momento vuelves a recibir tu remuneración completa.'
+  },
+  {
+    pregunta: '¿Voy a poder salir del boletín comercial?',
+    respuesta: 'Sí. Es una consecuencia legal de la resolución de término del procedimiento, aunque no ocurre de forma automática: requiere solicitarlo formalmente, algo que nuestro equipo gestiona como parte del servicio.'
+  },
+  {
+    pregunta: '¿Necesito tener un contrato de trabajo formal para acogerme?',
+    respuesta: 'No. La ley no exige contrato formal — lo relevante es que puedas acreditar de dónde provienen tus ingresos, algo que normalmente se resuelve con tu carpeta tributaria.'
+  }
+]
 </script>
