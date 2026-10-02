@@ -72,8 +72,7 @@
               Si tienes bienes inscritos a tu nombre —vivienda, vehículos, derechos hereditarios— debes saber que estos 
               también forman parte de lo que se liquidaría dentro del proceso, no solo el menaje del hogar. Si no tienes 
               bienes inscritos, en la práctica entregar bienes de menor valor (electrodomésticos, muebles, enseres del hogar) 
-              suele bastar para extinguir deudas mucho mayores. Hemos visto casos de un menaje básico eliminando una deuda de 
-              $20.000.000.</span>
+              suele bastar para extinguir deudas mucho mayores.</span>
           </div>
 
         </div>
@@ -305,7 +304,7 @@ definePageMeta({
 useHead({
   title: 'LIBERA Deudas - Evaluación Gratuita',
   meta: [
-    { name: 'description', content: 'Descubre si calificas para la eliminación o renegociación de deudas bajo la Ley 20.720 en 2 minutos.' }
+    { name: 'description', content: 'Evalúa gratis si tu situación de insolvencia cumple los requisitos de la Ley 20.720. Responde 7 preguntas, sin RUT ni datos bancarios.' }
   ]
 })
 
@@ -348,7 +347,7 @@ const faqs = [
   },
   {
     pregunta: '¿Me pueden embargar mi sueldo?',
-    respuesta: 'Tu remuneración está protegida hasta 56 UF (aprox. $2.300.000 a la fecha) — esa parte nunca es embargable. Sobre ese monto, el artículo 276 de la Ley 20.720 permite retener el excedente, pero solo por un máximo de tres meses consecutivos, no de forma indefinida. Y si ya tienes un embargo de sueldo vigente por una demanda, al ingresar tu solicitud de liquidación ese embargo queda suspendido junto con las demás acciones de tus acreedores.'
+    respuesta: 'Tu remuneración está protegida hasta 56 UF — esa parte nunca es embargable. Sobre ese monto, el artículo 276 de la Ley 20.720 permite retener el excedente, pero solo por un máximo de tres meses consecutivos, no de forma indefinida. Y si ya tienes un embargo de sueldo vigente por una demanda, al ingresar tu solicitud de liquidación ese embargo queda suspendido junto con las demás acciones de tus acreedores.'
   },
   {
     pregunta: '¿Me siguen descontando el crédito de mi sueldo si tengo descuento por planilla?',

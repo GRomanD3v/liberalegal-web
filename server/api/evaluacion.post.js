@@ -1,24 +1,10 @@
 // server/api/evaluacion.post.js
-//
-// Requiere: npm install nodemailer
-// Variables de entorno (.env, NO commitear):
-//   SMTP_USER=estrategiajuridica@liberalegal.cl
-//   SMTP_PASS=********
-//   LEAD_INBOX=estrategiajuridica@liberalegal.cl
-//
-// nuxt.config.ts necesita:
-//   runtimeConfig: {
-//     leadInbox: process.env.LEAD_INBOX || 'estrategiajuridica@liberalegal.cl',
-//   }
-
 import nodemailer from 'nodemailer'
 
 const PHONE_REGEX = /^(569\d{8}|9\d{8})$/
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-// Nunca interpolar strings de usuario en HTML sin escapar. Si un nombre viene con
-// "<img src=x onerror=...>" y esto se abre en un cliente de correo que no sanitiza
-// agresivamente (Outlook de escritorio), es un vector de XSS persistente.
+// Nunca interpolar strings de usuario en HTML sin escapar para prevenir inyección XSS.
 function escapeHtml(str = '') {
   return String(str)
     .replace(/&/g, '&amp;')
@@ -28,11 +14,23 @@ function escapeHtml(str = '') {
     .replace(/'/g, '&#039;')
 }
 
-// El scoring que llega del cliente es solo una sugerencia de UI — se recalcula aquí
-// porque no hay que confiar en lógica de negocio computada en el navegador para triage interno.
-function computeScore(respuestas = {}) {
-  if (respuestas.tieneDemandas === true || respuestas.descuentoPlanilla === true) return 'HOT_LEAD'
-  if (respuestas.montoDeuda === 'mas_15m') return 'WARM_LEAD'
+// Guard contra inyección CRLF en encabezados de correo / Subject.
+function sanitizeHeader(str = '') {
+  return String(str).replace(/[\r\n]/g, '').trim()
+}
+
+// Coerción y sanitización segura de strings (manejo de arrays de query y límites de longitud).
+function sanitizeStr(val, maxLen = 250) {
+  if (Array.isArray(val)) val = val[0]
+  if (typeof val !== 'string') return ''
+  return val.trim().slice(0, maxLen)
+}
+
+// Recalcular scoring en servidor (manejo defensivo contra null/undefined en respuestas).
+function computeScore(respuestas) {
+  const r = respuestas || {}
+  if (r.tieneDemandas === true || r.descuentoPlanilla === true) return 'HOT_LEAD'
+  if (r.montoDeuda === 'mas_15m') return 'WARM_LEAD'
   return 'STANDARD'
 }
 
@@ -51,10 +49,10 @@ function buildEmailHtml(body, scoring) {
 
   const badgeColor = { HOT_LEAD: '#e07b5a', WARM_LEAD: '#c8a000', STANDARD: '#7a8fa0' }[scoring] || '#7a8fa0'
 
-  const row = (label, value) => `
+  const row = (label, value, highlight = false) => `
     <tr>
-      <td style="padding:8px 12px;border-bottom:1px solid #edf1f5;color:#7a8fa0;font-size:12px;width:220px;">${escapeHtml(label)}</td>
-      <td style="padding:8px 12px;border-bottom:1px solid #edf1f5;color:#1a2e3d;font-size:13px;font-weight:600;">${escapeHtml(String(value ?? '—'))}</td>
+      <td style="padding:8px 12px;border-bottom:1px solid #edf1f5;color:#7a8fa0;font-size:12px;width:220px;font-weight:${highlight ? 'bold' : 'normal'};">${escapeHtml(label)}</td>
+      <td style="padding:8px 12px;border-bottom:1px solid #edf1f5;color:${highlight ? '#1a3a4f' : '#1a2e3d'};font-size:13px;font-weight:600;">${escapeHtml(String(value ?? '—'))}</td>
     </tr>`
 
   return `
@@ -89,11 +87,19 @@ function buildEmailHtml(body, scoring) {
         ${row('Trámite SUPERIR en curso', LABELS.bool[r.tramiteSuperir])}
       </table>
 
-      <h3 style="color:#1a3a4f;font-size:14px;border-bottom:2px solid #e07b5a;padding-bottom:6px;margin-top:20px;">Origen</h3>
+      <h3 style="color:#1a3a4f;font-size:14px;border-bottom:2px solid #e07b5a;padding-bottom:6px;margin-top:20px;">Trazabilidad y Origen de Campaña</h3>
       <table style="width:100%;border-collapse:collapse;">
-        ${row('Campaña (utm_campaign)', o.utm_campaign)}
-        ${row('Fuente / medio', [o.utm_source, o.utm_medium].filter(Boolean).join(' / '))}
-        ${row('URL de aterrizaje', o.landing_url)}
+        ${row('Google Click ID (gclid)', o.gclid || '—', true)}
+        ${o.gbraid ? row('Google BraID (gbraid)', o.gbraid) : ''}
+        ${o.wbraid ? row('Google WbraID (wbraid)', o.wbraid) : ''}
+        ${row('Palabra clave (utm_term)', o.utm_term || '—', true)}
+        ${row('Tipo concordancia (utm_matchtype)', o.utm_matchtype || '—')}
+        ${row('Campaña (utm_campaign)', o.utm_campaign || '—')}
+        ${row('Fuente (utm_source)', o.utm_source || '—')}
+        ${row('Medio (utm_medium)', o.utm_medium || '—')}
+        ${row('Contenido anuncio (utm_content)', o.utm_content || '—')}
+        ${row('URL de aterrizaje', o.landing_url || '—')}
+        ${row('Referencia (referrer)', o.referrer || '—')}
       </table>
 
       <p style="color:#7a8fa0;font-size:11px;margin-top:20px;border-top:1px solid #edf1f5;padding-top:12px;">
@@ -106,46 +112,79 @@ function buildEmailHtml(body, scoring) {
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
 
-  // Nunca confiar solo en la validación del cliente: se repite aquí antes de gastar
-  // una conexión SMTP o dejar entrar datos sucios al correo del equipo.
-  const nombre = body?.contacto?.nombre?.trim() || ''
-  const telefono = (body?.contacto?.telefono || '').replace(/[\s\-\+]/g, '')
-  const email = body?.contacto?.email?.trim() || ''
+  // Validación y sanitización server-side
+  const rawNombre = sanitizeStr(body?.contacto?.nombre, 100)
+  const rawTelefono = sanitizeStr(body?.contacto?.telefono, 20).replace(/[\s\-\+]/g, '')
+  const rawEmail = sanitizeStr(body?.contacto?.email, 100)
 
-  if (nombre.split(/\s+/).filter(Boolean).length < 2) {
+  if (rawNombre.split(/\s+/).filter(Boolean).length < 2) {
     throw createError({ statusCode: 400, statusMessage: 'Nombre y apellido incompletos' })
   }
-  if (!PHONE_REGEX.test(telefono)) {
+  if (!PHONE_REGEX.test(rawTelefono)) {
     throw createError({ statusCode: 400, statusMessage: 'Teléfono inválido' })
   }
-  if (!EMAIL_REGEX.test(email)) {
+  if (!EMAIL_REGEX.test(rawEmail)) {
     throw createError({ statusCode: 400, statusMessage: 'Email inválido' })
   }
 
-  const scoring = computeScore(body.respuestas)
-  const config = useRuntimeConfig()
+  // Sanitizar origen y UTMs defensivamente
+  const cleanOrigen = {
+    gclid: sanitizeStr(body?.origen?.gclid, 250),
+    gbraid: sanitizeStr(body?.origen?.gbraid, 250),
+    wbraid: sanitizeStr(body?.origen?.wbraid, 250),
+    utm_source: sanitizeStr(body?.origen?.utm_source, 100),
+    utm_medium: sanitizeStr(body?.origen?.utm_medium, 100),
+    utm_campaign: sanitizeStr(body?.origen?.utm_campaign, 150),
+    utm_term: sanitizeStr(body?.origen?.utm_term, 250),
+    utm_matchtype: sanitizeStr(body?.origen?.utm_matchtype, 50),
+    utm_content: sanitizeStr(body?.origen?.utm_content, 150),
+    landing_url: sanitizeStr(body?.origen?.landing_url, 500),
+    referrer: sanitizeStr(body?.origen?.referrer, 500)
+  }
 
+  const cleanBody = {
+    ...body,
+    contacto: {
+      nombre: rawNombre,
+      telefono: rawTelefono,
+      email: rawEmail
+    },
+    origen: cleanOrigen
+  }
+
+  const scoring = computeScore(cleanBody.respuestas)
+  const config = useRuntimeConfig(event)
+
+  // Configuración de transporte SMTP con pool y timeouts explícitos
+  const smtpPort = Number(config.smtpPort) || 465
   const transporter = nodemailer.createTransport({
+    pool: true,
+    maxConnections: 3,
+    maxMessages: 50,
     host: config.smtpHost || 'mail.liberalegal.cl',
-    port: config.smtpPort || 465,
-    secure: true,
+    port: smtpPort,
+    secure: smtpPort === 465,
     auth: {
       user: config.smtpUser,
       pass: config.smtpPass
-    }
+    },
+    connectionTimeout: 10000,
+    greetingTimeout: 10000,
+    socketTimeout: 15000
   })
 
   try {
+    const cleanHeaderNombre = sanitizeHeader(rawNombre)
     await transporter.sendMail({
       from: `"LIBERA Legal — Evaluación Web" <${config.smtpUser}>`,
       to: config.leadInbox,
-      replyTo: email,
-      subject: `[${scoring.replace('_', ' ')}] Nueva evaluación — ${nombre}`,
-      html: buildEmailHtml(body, scoring)
+      replyTo: rawEmail,
+      subject: `[${scoring.replace('_', ' ')}] Nueva evaluación — ${cleanHeaderNombre}`,
+      html: buildEmailHtml(cleanBody, scoring)
     })
   } catch (err) {
-    // Log server-side para diagnóstico; no exponer detalle del error SMTP al cliente.
-    console.error('Error enviando correo de evaluación:', err)
+    // Log seguro sin PII (datos personales)
+    console.error('Error enviando correo de evaluación:', err?.code || err?.message || 'SMTP_ERROR')
     throw createError({ statusCode: 502, statusMessage: 'No se pudo enviar el correo' })
   }
 

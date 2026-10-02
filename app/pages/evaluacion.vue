@@ -303,7 +303,7 @@
               <div>
                 <label class="block text-xs font-bold text-brand-dark uppercase mb-2">Nombre Completo (Nombre y
                   Apellido)</label>
-                <input v-model="formData.nombre" @input="errors.nombre = ''" type="text"
+                <input v-model="formData.nombre" @input="errors.nombre = ''" type="text" maxlength="100"
                   placeholder="Ej: Juan Pérez Morales"
                   :class="errors.nombre ? 'border-red-300 focus:border-red-400 focus:ring-red-200' : 'border-gray-200 focus:border-brand-green focus:ring-brand-green/20'"
                   class="w-full px-4 py-3 rounded-lg border focus:ring-2 outline-none transition-all text-brand-dark bg-gray-50 focus:bg-white" />
@@ -312,7 +312,7 @@
               <div>
                 <label class="block text-xs font-bold text-brand-dark uppercase mb-2">Teléfono / WhatsApp
                   (Chile)</label>
-                <input v-model="formData.telefono" @input="errors.telefono = ''" type="tel"
+                <input v-model="formData.telefono" @input="errors.telefono = ''" type="tel" maxlength="20"
                   placeholder="+56 9 1234 5678 o 912345678"
                   :class="errors.telefono ? 'border-red-300 focus:border-red-400 focus:ring-red-200' : 'border-gray-200 focus:border-brand-green focus:ring-brand-green/20'"
                   class="w-full px-4 py-3 rounded-lg border focus:ring-2 outline-none transition-all text-brand-dark bg-gray-50 focus:bg-white" />
@@ -320,7 +320,7 @@
               </div>
               <div>
                 <label class="block text-xs font-bold text-brand-dark uppercase mb-2">Correo Electrónico</label>
-                <input v-model="formData.email" @input="errors.email = ''" type="email" placeholder="juan@ejemplo.cl"
+                <input v-model="formData.email" @input="errors.email = ''" type="email" maxlength="100" placeholder="juan@ejemplo.cl"
                   :class="errors.email ? 'border-red-300 focus:border-red-400 focus:ring-red-200' : 'border-gray-200 focus:border-brand-green focus:ring-brand-green/20'"
                   class="w-full px-4 py-3 rounded-lg border focus:ring-2 outline-none transition-all text-brand-dark bg-gray-50 focus:bg-white" />
                 <p v-if="errors.email" class="text-red-500 text-xs mt-1">{{ errors.email }}</p>
@@ -384,23 +384,45 @@ const formData = ref({
 
 const errors = ref({ nombre: '', telefono: '', email: '' })
 
-// ── Atribución UTM ─────────────────────────────────────────────────────────────
-// Metadata de origen de campaña — útil para cruzar leads con Google Ads (AG1/AG2/AG3).
-// No es parte de la lógica legal; se envía al servidor para triage de conversiones.
+// ── Atribución UTM / Google Ads ───────────────────────────────────────────────
+// Metadata de origen de campaña — se persiste 30 días y se envía al servidor para trazabilidad.
 const origen = ref({
-  utm_source: '', utm_medium: '', utm_campaign: '',
-  utm_content: '', utm_term: '', referrer: '', landing_url: ''
+  gclid: '',
+  gbraid: '',
+  wbraid: '',
+  utm_source: '',
+  utm_medium: '',
+  utm_campaign: '',
+  utm_term: '',
+  utm_matchtype: '',
+  utm_content: '',
+  referrer: '',
+  landing_url: ''
 })
 
 onMounted(() => {
   const route = useRoute()
-  origen.value.utm_source = route.query.utm_source || ''
-  origen.value.utm_medium = route.query.utm_medium || ''
-  origen.value.utm_campaign = route.query.utm_campaign || ''
-  origen.value.utm_content = route.query.utm_content || ''
-  origen.value.utm_term = route.query.utm_term || ''
-  origen.value.referrer = document.referrer || ''
-  origen.value.landing_url = window.location.href
+  const nuxtApp = useNuxtApp()
+  const saved = nuxtApp.$getAttribution ? nuxtApp.$getAttribution() : {}
+
+  const getParam = (key) => {
+    const fromQuery = route.query[key]
+    if (Array.isArray(fromQuery)) return String(fromQuery[0] || '').trim().slice(0, 250)
+    if (typeof fromQuery === 'string' && fromQuery.trim()) return fromQuery.trim().slice(0, 250)
+    return typeof saved[key] === 'string' ? saved[key].trim().slice(0, 250) : ''
+  }
+
+  origen.value.gclid = getParam('gclid')
+  origen.value.gbraid = getParam('gbraid')
+  origen.value.wbraid = getParam('wbraid')
+  origen.value.utm_source = getParam('utm_source')
+  origen.value.utm_medium = getParam('utm_medium')
+  origen.value.utm_campaign = getParam('utm_campaign')
+  origen.value.utm_term = getParam('utm_term')
+  origen.value.utm_matchtype = getParam('utm_matchtype')
+  origen.value.utm_content = getParam('utm_content')
+  origen.value.referrer = (typeof document !== 'undefined' && document.referrer) ? document.referrer.slice(0, 500) : (saved.referrer || '')
+  origen.value.landing_url = saved.landing_url || (typeof window !== 'undefined' ? window.location.href.slice(0, 500) : '')
 })
 
 // ── Computed ───────────────────────────────────────────────────────────────────
@@ -502,6 +524,8 @@ const buildPayload = () => ({
 })
 
 const validateAndSubmit = async () => {
+  if (isSubmitting.value) return
+
   errors.value = { nombre: '', telefono: '', email: '' }
   let isValid = true
 
@@ -530,28 +554,34 @@ const validateAndSubmit = async () => {
   isSubmitting.value = true
   submitError.value = ''
 
+  // 1. Conversión Google Ads — Se dispara inmediatamente ANTES del fetch para asegurar el registro
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    try {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18195127031/j3mGCOyekbUcEPe1juRD',
+        'value': 1.0,
+        'currency': 'CLP'
+      })
+    } catch (_) {}
+  }
+
+  // 2. Evento Lead Meta Pixel — Con contexto de scoring
+  if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+    try {
+      window.fbq('track', 'Lead', {
+        content_category: leadScore.value,
+        value: 1.0,
+        currency: 'CLP'
+      })
+    } catch (_) {}
+  }
+
   try {
     await $fetch('/api/evaluacion', {
       method: 'POST',
       body: buildPayload()
     })
 
-    // Conversión Google Ads — se dispara justo antes del envío, cuando el lead ya validó sus datos.
-  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-    window.gtag('event', 'conversion', {
-      'send_to': 'AW-18195127031/j3mGCOyekbUcEPe1juRD',
-      'value': 1.0,
-      'currency': 'CLP'
-    })
-  }
-  // Enviamos el evento Lead y aprovechamos tu computed property para darle más contexto al algoritmo
-  if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
-    window.fbq('track', 'Lead', {
-      content_category: leadScore.value, 
-      value: 1.0,
-      currency: 'CLP'
-    })
-  }
     isSubmitted.value = true
     setTimeout(() => {
       document.getElementById('seccion-informe')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
